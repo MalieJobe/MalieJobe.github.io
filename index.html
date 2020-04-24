@@ -6,17 +6,121 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="bg_white" id="top">
         <nav>
             <a href="">
-                <lord-icon animation="hover" src="animated_icons/63-home-outline.json"></lord-icon>
+                <lord-icon animation="morph" src="assets/animated_icons/63-home-outline.json"></lord-icon>
+                <span class="semi_bold">Home</span>
             </a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="">
+                <lord-icon animation="morph" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
+                <span class="semi_bold">Skills</span>
+            </a>
+            <a href="">
+                <lord-icon animation="morph" src="assets/animated_icons/399-grid-list-morph-outline.json"></lord-icon>
+                <span class="semi_bold">Projects</span>
+            </a>
+            <a href="">
+                <lord-icon animation="morph" src="assets/animated_icons/268-avatar-man-outline.json"></lord-icon>
+                <span class="semi_bold">About</span>
+            </a>
+            <a href="">
+                <lord-icon animation="morph" src="assets/animated_icons/145-envelope-mail-notification-open-morph-outline.json"></lord-icon>
+                <span class="semi_bold">Contact</span>
+            </a>
         </nav>
     </header>
+    <section id="hero">
+        <h1>Designer, Software Engineer & <span class="stand_out">Audio Engineer</span></h1>
+        <span class="quote">
+            <q>When something is important enough, you do it even if the odds are not in your favor.</q>
+            - Elon Musk
+        </span>
+        <img class="illustration" src="assets/illustrations/undraw_static_website_0107.svg" alt="">
+    </section>
+    <section id="skills" class="bg_shade">
+        <h2 class="section_title">My <span class="stand_out">Skills</span></h2>
+        <div class="card bg_white">
+            <lord-icon animation="morph" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
+            <h3 class="card_title">Design</h3>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+            </ul>
+            <span class="semi_bold">Toolkit</span>
+            <ul>
+                <li>Adobe XD</li>
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+        </div>
+        <div class="card bg_white">
+            <ul>
+                <li>Javascript / ES6</li>
+                <li>HTML5</li>
+                <li>CSS3 / SASS</li>
+                <li>Wordpress</li>
+                <li>Bootstrap</li>
+                <li>Version Control / Git</li>
+                <li>Shopify's {% .liquid %}</li>
+                <li>JQuery (learning)</li>
+                <li>Python (learning)</li>
+                <li>PHP (learning)</li>
+            </ul>
+            <span class="semi_bold">Toolkit</span>
+            <ul>
+                <li>VS Code</li>
+                <li>Github</li>
+            </ul>
+            <span class="semi_bold">Other</span>
+            <ul>
+                <li>Asana</li>
+                <li>MS Office</li>
+                <li>Slack</li>
+                <li>Mailchimp</li>
+            </ul>
+        </div>
+        <div class="card bg_white">
+            <lord-icon animation="morph" src="assets/animated_icons/188-microphone-recording-outline.json"></lord-icon>
+            <h3 class="card_title">Audio</h3>
+            <ul>
+                <li>Recording</li>
+                <li>Live</li>
+                <li>Mixing</li>
+                <li>Mastering</li>
+                <li>Sound Design</li>
+            </ul>
+            <span class="semi_bold">Toolkit</span>
+            <ul>
+                <li>Cubase 9.5</li>
+                <li>ProTools 12</li>
+                <li>WavesPlugins</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="bg_white">
+        <h2 class="section_title">Projects <span class="stand_out">& Work</span></h2>
+        <img src="assets/illustrations/undraw_project_completed_w0oq.svg" alt="" class="illustration">
+        <div class="project_container">
+            <div class="project_card">
+                <img src="" alt="" class="project_img">
+                <h3 class="project_title accent">Google Snippet Optimizer</h3>
+                <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                <a href="" class="project_btn">View Project</a>
+                <a href="" class="project_src">View Source</a>
+            </div>
+            <div class="project_card"></div>
+            <div class="project_card"></div>
+            <div class="project_card"></div>
+            <div class="project_card"></div>
+        </div>
+    </section>
+    
+    <a href="#top" class="scroll-up">
+        <img src="assets/icons/scroll-up.svg" alt="">
+    </a>
 </body>
 <script src="lord-icon.js"></script>
 </html>
