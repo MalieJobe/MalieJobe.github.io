@@ -8,113 +8,200 @@
 <body>
     <header class="bg_white" id="top">
         <nav>
-            <a href="">
-                <lord-icon animation="morph" src="assets/animated_icons/63-home-outline.json"></lord-icon>
-                <span class="semi_bold">Home</span>
+            <a href="#hero">
+                <lord-icon animation="hover" src="assets/animated_icons/63-home-outline.json"></lord-icon>
+                <span>Home</span>
             </a>
-            <a href="">
-                <lord-icon animation="morph" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
-                <span class="semi_bold">Skills</span>
+            <a href="#skills">
+                <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
+                <span>Skills</span>
             </a>
-            <a href="">
+            <a href="#projects">
                 <lord-icon animation="morph" src="assets/animated_icons/399-grid-list-morph-outline.json"></lord-icon>
-                <span class="semi_bold">Projects</span>
+                <span>Projects</span>
             </a>
-            <a href="">
-                <lord-icon animation="morph" src="assets/animated_icons/268-avatar-man-outline.json"></lord-icon>
-                <span class="semi_bold">About</span>
+            <a href="#about">
+                <lord-icon animation="hover" src="assets/animated_icons/268-avatar-man-outline.json"></lord-icon>
+                <span>About</span>
             </a>
-            <a href="">
+            <a href="#contact">
                 <lord-icon animation="morph" src="assets/animated_icons/145-envelope-mail-notification-open-morph-outline.json"></lord-icon>
-                <span class="semi_bold">Contact</span>
+                <span>Contact</span>
+            </a>
+            <a id="theme_toggle">
+                <lord-icon id="theme_toggle" animation="morph" src="assets/animated_icons/397-toggle-radio-button-1-morph-outline.json"></lord-icon>
+                <span>Dark Mode</span>
             </a>
         </nav>
     </header>
-    <section id="hero">
-        <h1>Designer, Software Engineer & <span class="stand_out">Audio Engineer</span></h1>
-        <span class="quote">
-            <q>When something is important enough, you do it even if the odds are not in your favor.</q>
-            - Elon Musk
-        </span>
+    <section id="hero" class="center">
+        <div class="container">
+            <h1>Designer, Software Engineer <span class="stand_out">& Audio Engineer</span></h1>
+            <span>
+                <q>When something is important enough, you do it even if the odds are not in your favor.</q>
+                - Elon Musk
+            </span>
+        </div>
         <img class="illustration" src="assets/illustrations/undraw_static_website_0107.svg" alt="">
     </section>
     <section id="skills" class="bg_shade">
-        <h2 class="section_title">My <span class="stand_out">Skills</span></h2>
-        <div class="card bg_white">
-            <lord-icon animation="morph" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
-            <h3 class="card_title">Design</h3>
-            <ul>
-                <li>UI/UX Design</li>
-                <li>Wireframing</li>
-                <li>Prototyping</li>
-            </ul>
-            <span class="semi_bold">Toolkit</span>
-            <ul>
-                <li>Adobe XD</li>
-                <li>Figma</li>
-                <li>Adobe Photoshop</li>
-            </ul>
-        </div>
-        <div class="card bg_white">
-            <ul>
-                <li>Javascript / ES6</li>
-                <li>HTML5</li>
-                <li>CSS3 / SASS</li>
-                <li>Wordpress</li>
-                <li>Bootstrap</li>
-                <li>Version Control / Git</li>
-                <li>Shopify's {% .liquid %}</li>
-                <li>JQuery (learning)</li>
-                <li>Python (learning)</li>
-                <li>PHP (learning)</li>
-            </ul>
-            <span class="semi_bold">Toolkit</span>
-            <ul>
-                <li>VS Code</li>
-                <li>Github</li>
-            </ul>
-            <span class="semi_bold">Other</span>
-            <ul>
-                <li>Asana</li>
-                <li>MS Office</li>
-                <li>Slack</li>
-                <li>Mailchimp</li>
-            </ul>
-        </div>
-        <div class="card bg_white">
-            <lord-icon animation="morph" src="assets/animated_icons/188-microphone-recording-outline.json"></lord-icon>
-            <h3 class="card_title">Audio</h3>
-            <ul>
-                <li>Recording</li>
-                <li>Live</li>
-                <li>Mixing</li>
-                <li>Mastering</li>
-                <li>Sound Design</li>
-            </ul>
-            <span class="semi_bold">Toolkit</span>
-            <ul>
-                <li>Cubase 9.5</li>
-                <li>ProTools 12</li>
-                <li>WavesPlugins</li>
-            </ul>
+        <div class="container">
+            <h2 class="section_title">My <span class="stand_out">Skills</span></h2>
+            <div class="card_container">
+                <div class="card bg_white">
+                    <div class="card_title">
+                        <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
+                    <h3>Design</h3>
+                    </div>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                    </ul>
+                    <h4>Toolkit</h4>
+                    <ul>
+                        <li>Adobe XD</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="card bg_white">
+                    <div class="card_title">
+                        <lord-icon animation="hover" src="assets/animated_icons/479-computer-laptop-notebook-outline.json"></lord-icon>
+                        <h3>Developer</h3>
+                    </div>
+                    <div class="card_content">
+                        <ul>
+                            <li>Javascript / ES6</li>
+                            <li>HTML5</li>
+                            <li>CSS3 / SASS</li>
+                            <li>Wordpress</li>
+                            <li>Bootstrap</li>
+                            <li>Version Control / Git</li>
+                            <li>Shopify's {% .liquid %}</li>
+                            <li>JQuery (learning)</li>
+                            <li>Python (learning)</li>
+                            <li>PHP (learning)</li>
+                        </ul>
+                        <div class="wrapper">
+                            <h4>Toolkit</h4>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Github</li>
+                            </ul>
+                            <h4>Other</h4>
+                            <ul>
+                                <li>Asana</li>
+                                <li>MS Office</li>
+                                <li>Slack</li>
+                                <li>Mailchimp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg_white">
+                    <div class="card_title">
+                        <lord-icon animation="hover" src="assets/animated_icons/188-microphone-recording-outline.json"></lord-icon>
+                        <h3>Audio</h3>
+                    </div>
+                    <ul>
+                        <li>Recording</li>
+                        <li>Live</li>
+                        <li>Mixing</li>
+                        <li>Mastering</li>
+                        <li>Sound Design</li>
+                    </ul>
+                    <h4>Toolkit</h4>
+                    <ul>
+                        <li>Cubase 9.5</li>
+                        <li>ProTools 12</li>
+                        <li>WavesPlugins</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="bg_white">
+    <section id="projects">
         <h2 class="section_title">Projects <span class="stand_out">& Work</span></h2>
-        <img src="assets/illustrations/undraw_project_completed_w0oq.svg" alt="" class="illustration">
-        <div class="project_container">
-            <div class="project_card">
-                <img src="" alt="" class="project_img">
-                <h3 class="project_title accent">Google Snippet Optimizer</h3>
-                <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                <a href="" class="project_btn">View Project</a>
-                <a href="" class="project_src">View Source</a>
+        <div class="container">
+            <div class="project_container">
+                <div class="project_card">
+                    <img src="assets/images/img1.png" alt="" class="project_img">
+                    <div class="project_info">
+                        <h3 class="project_title accent">Google Snippet Optimizer</h3>
+                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                        <a href="" class="project_btn">View Project</a>
+                        <a href="" class="project_src active">View Source</a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="assets/images/img2.png" alt="" class="project_img">
+                    <div class="project_info">
+                        <h3 class="project_title accent">Climate Change Map</h3>
+                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                        <a href="" class="project_btn">View Project</a>
+                        <span class="project_src private">Source Private</span>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="assets/images/img3.png" alt="" class="project_img">
+                    <div class="project_info">
+                        <h3 class="project_title accent">Shopify Theme</h3>
+                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                        <a href="" class="project_btn">View Project</a>
+                        <span class="project_src private">Source Private</span>
+                    </div>    
+                </div>
+                <div class="project_card">
+                    <img src="assets/images/img4.png" alt="" class="project_img">
+                    <div class="project_info">   
+                        <h3 class="project_title accent">Online Classes w/ Wordpress</h3>
+                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                        <a href="" class="project_btn">View Project</a>
+                        <span class="project_src private">Source Private</span>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="assets/images/img5.png" alt="" class="project_img">
+                    <div class="project_info">
+                        <h3 class="project_title accent">Design & Wireframe</h3>
+                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+                        <a href="" class="project_btn">View Project</a>
+                        <span class="project_src private">Source Private</span>
+                    </div>
+                </div>
             </div>
-            <div class="project_card"></div>
-            <div class="project_card"></div>
-            <div class="project_card"></div>
-            <div class="project_card"></div>
+            <img src="assets/illustrations/undraw_project_completed_w0oq.svg" alt="" class="illustration" id="proj_img">
+        </div>
+    </section>
+
+    <section id="about" class="bg_shade">
+        <div class="container">
+            <h2 class="section_title">About <span class="stand_out">Me</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime sequi velit sed! At officia esse saepe tempore, quidem excepturi possimus sit recusandae laboriosam delectus, aperiam suscipit praesentium consequuntur mollitia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corrupti alias sint delectus nisi. Repellat, quidem. Quidem libero deserunt corporis. Sapiente, iure? Beatae, laudantium dolorum, animi recusandae dignissimos iste voluptatum voluptatem architecto accusamus vitae sunt obcaecati soluta nemo suscipit eveniet. Tempora molestias amet ut doloremque. Omnis facere inventore eligendi perferendis?</p>
+            <ul>
+                <li>Something</li>
+                <li>Another Line of it</li>
+                <li>Where to end</li>
+                <li>My last one</li>
+            </ul>
+            <img src="assets/illustrations/undraw_dev_productivity_umsq.svg" alt="" class="illustration">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section_title">Contact, Download <span class="stand_out">& more</span></h2>
+            <p>My email address is <a href="mailto:maliejobe@outlook.de">maliejobe@outlook.de</a>. Contact me for a project or hire.</p>
+            <a download href="">Download my Resume</a>
+            <p>Designed by Me<br>
+               Code by Me<br>
+               Animated Icons by <a href="https://lordicon.com/" target="_blank" rel="noopener noreferrer">LordIcon</a><br>
+               Illustrations by <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a>
+            </p>
+            <img src="assets/illustrations/undraw_delivery_address_03n0.svg" alt="" class="illustration">
         </div>
     </section>
     
@@ -123,4 +210,10 @@
     </a>
 </body>
 <script src="lord-icon.js"></script>
+<script>
+    let toggle = document.getElementById('theme_toggle');
+    toggle.addEventListener('click', function() {
+        document.documentElement.classList.toggle('dark_theme');
+    })
+</script>
 </html>
