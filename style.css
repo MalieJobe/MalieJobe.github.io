@@ -65,6 +65,8 @@ header nav {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 header nav lord-icon {
