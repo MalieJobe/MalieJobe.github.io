@@ -91,7 +91,7 @@ header nav a {
 
 section {
   margin: 1rem auto;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 
 section .section_title {
@@ -107,7 +107,7 @@ section .card {
 }
 
 section#projects {
-  padding: 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
