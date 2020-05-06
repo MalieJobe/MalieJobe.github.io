@@ -35,10 +35,6 @@ body
     margin: 0
     line-height: 1.5
 
-body.dark_theme
-    background: var(--primary)
-    color: var(--light)
-
 .scroll-up
     position: sticky
     bottom: 1rem
@@ -49,29 +45,33 @@ body.dark_theme
         width: 4rem
         height: 4rem
 
+.clear-float
+    clear: both
+
 header
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1)
-    nav
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
-        padding: 1rem
-        max-width: 1000px
-        margin: auto
+    background-color: var(--light)
+.menu
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    padding: 1rem
+    max-width: 1000px
+    margin: auto
 
-        lord-icon
-            display: block
-            margin: auto
-            margin-bottom: -10px
-    
-        a
-            text-decoration: none
-            color: var(--primary)
-            text-align: center
-            font-weight: 600
+    lord-icon
+        display: block
+        margin: auto
+        margin-bottom: -10px
+
+    &__item
+        text-decoration: none
+        color: var(--primary)
+        text-align: center
+        font-weight: 600
 
 .container
     width: 100%
-    max-width: 1000px
+    max-width: 1200px
     margin: auto
     position: relative
 
@@ -88,6 +88,7 @@ section
         margin: auto
         margin-bottom: 2rem
         max-width: 400px
+        background: var(--light)
 
     &#projects
         padding: 4rem 0
@@ -196,6 +197,10 @@ ul
     margin-top: .2rem
 .center
     text-align: center
+.right
+    text-align: right
+.block
+    display: block
 
 .stand_out
     color: var(--main)
@@ -206,10 +211,10 @@ ul
     margin-top: 4rem
     display: block
 
-.bg_white
+section:nth-child(even)
     background-color: var(--light)
 
-.bg_shade
+section:nth-child(odd)
     background-color: var(--shade)
 
 q
@@ -224,47 +229,44 @@ q
         position: sticky
         top: 0
         z-index: 9999
-        nav
-            grid-template-columns: repeat(8, 1fr)
+    .menu
+        grid-template-columns: repeat(8, 1fr)
 
-            lord-icon
-                width: 4rem
-                height: 4rem
-        
-            #theme_toggle
-                grid-column-start: col-start 8
+        lord-icon
+            width: 4rem
+            height: 4rem
+    
+        #theme_toggle
+            grid-column-start: col-start 8
     
     .scroll-up
         display: none
 
+    .project_container
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+
+    .project_card
+        flex-basis: 400px
+        padding: 1rem
+
     .card_container
-        display: grid
-        grid-template-columns: 1fr 2fr 1fr
-        column-gap: 1rem
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
         
         .card
             max-width: none
             margin: 0
 
-    #projects
-        .container
-            display: grid
-            grid-template-columns: 1fr 1fr
-            #proj_img
-                width: 100%
-                max-width: auto
-                position: sticky
-                top: 140px
-
     .card_content
         display: grid
         grid-template-columns: 60% 40%
-
-    .project_card
-        max-width: 400px
             
     .illustration
-        max-width: 500px
+        max-width: 450px
+        margin: 4rem auto 0 auto
     
 
     

@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg_white" id="top">
-        <nav>
-            <a href="#hero">
+    <header id="top">
+        <nav class="menu">
+            <a href="#hero" class="menu__item">
                 <lord-icon animation="hover" src="assets/animated_icons/63-home-outline.json"></lord-icon>
                 <span>Home</span>
             </a>
-            <a href="#skills">
+            <a href="#skills" class="menu__item">
                 <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
                 <span>Skills</span>
             </a>
-            <a href="#projects">
+            <a href="#projects" class="menu__item">
                 <lord-icon animation="morph" src="assets/animated_icons/399-grid-list-morph-outline.json"></lord-icon>
                 <span>Projects</span>
             </a>
-            <a href="#about">
+            <a href="#about" class="menu__item">
                 <lord-icon animation="hover" src="assets/animated_icons/268-avatar-man-outline.json"></lord-icon>
                 <span>About</span>
             </a>
-            <a href="#contact">
+            <a href="#contact" class="menu__item">
                 <lord-icon animation="morph" src="assets/animated_icons/145-envelope-mail-notification-open-morph-outline.json"></lord-icon>
                 <span>Contact</span>
             </a>
-            <a id="theme_toggle">
+            <a id="theme_toggle" class="menu__item">
                 <lord-icon id="theme_toggle" animation="morph" src="assets/animated_icons/397-toggle-radio-button-1-morph-outline.json"></lord-icon>
                 <span>Dark Mode</span>
             </a>
@@ -45,12 +45,12 @@
         </div>
         <img class="illustration" src="assets/illustrations/undraw_static_website_0107.svg" alt="">
     </section>
-    <section id="skills" class="bg_shade">
+    <section id="skills">
         <div class="container">
             <h2 class="section_title">My <span class="stand_out">Skills</span></h2>
             <div class="card_container">
-                <div class="card bg_white">
-                    <div class="card_title">
+                <div class="card">
+                    <div class="center">
                         <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
                     <h3>Design</h3>
                     </div>
@@ -66,10 +66,10 @@
                         <li>Adobe Photoshop</li>
                     </ul>
                 </div>
-                <div class="card bg_white">
-                    <div class="card_title">
+                <div class="card">
+                    <div class="center">
                         <lord-icon animation="hover" src="assets/animated_icons/479-computer-laptop-notebook-outline.json"></lord-icon>
-                        <h3>Developer</h3>
+                        <h3>Dev</h3>
                     </div>
                     <div class="card_content">
                         <ul>
@@ -100,8 +100,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg_white">
-                    <div class="card_title">
+                <div class="card">
+                    <div class="center">
                         <lord-icon animation="hover" src="assets/animated_icons/188-microphone-recording-outline.json"></lord-icon>
                         <h3>Audio</h3>
                     </div>
@@ -172,12 +172,12 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/illustrations/undraw_project_completed_w0oq.svg" alt="" class="illustration" id="proj_img">
         </div>
     </section>
     
-    <section id="about" class="bg_shade">
+    <section id="about">
         <div class="container">
+            <img style="float:right" src="assets/illustrations/undraw_dev_productivity_umsq.svg" alt="" class="illustration">
             <h2 class="section_title">About <span class="stand_out">Me</span></h2>
             <p>Hello. My name is Malie Bertram, I am a software & audio engineer. I started out at thirteen years old, building static websites in my free time. Later I got into CMS's which eventually brought me to <em>real</em> programming languages.</p>
             <p>At the moment I am based in Berlin, Germany. I have a passion for music, technology and (human) languages, three of which I speak fluendly: German, English & Spanish. I got my degree in audio engineering out of pure interest and dove into the world of code right after. Since then I have been both self-employed & employed at mid-sized firms for multiple years.<br>Here are some fun facts about me:</p>
@@ -187,21 +187,22 @@
                 <li>I've worked on 3 published studio albums</li>
                 <li>I lived in India for four years</li>
             </ul>
-            <img src="assets/illustrations/undraw_dev_productivity_umsq.svg" alt="" class="illustration">
+            <div class="clear-float"></div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2 class="section_title">Contact, Download <span class="stand_out">& more</span></h2>
-            <p>My email address is <a href="mailto:maliejobe@outlook.de">maliejobe@outlook.de</a>. Contact me for a project or hire.</p>
-            <a download href="">Download my Resume</a>
-            <p>Designed by Me<br>
+            <img style="float:left" src="assets/illustrations/undraw_delivery_address_03n0.svg" alt="" class="illustration">
+            <h2 class="section_title right">Contact, Download <span class="stand_out">& more</span></h2>
+            <p class="right">My email address is <a href="mailto:maliejobe@outlook.de">maliejobe@outlook.de</a>. Contact me for a project or hire.</p>
+            <a class="right block" download href="">Download my Resume</a>
+            <p class="right">Designed by Me<br>
                Code by Me<br>
                Animated Icons by <a href="https://lordicon.com/" target="_blank" rel="noopener noreferrer">LordIcon</a><br>
                Illustrations by <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a>
             </p>
-            <img src="assets/illustrations/undraw_delivery_address_03n0.svg" alt="" class="illustration">
+            <div class="clear-float"></div>
         </div>
     </section>
     

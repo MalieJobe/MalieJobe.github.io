@@ -33,11 +33,6 @@ body {
   line-height: 1.5;
 }
 
-body.dark_theme {
-  background: var(--primary);
-  color: var(--light);
-}
-
 .scroll-up {
   position: -webkit-sticky;
   position: sticky;
@@ -52,12 +47,17 @@ body.dark_theme {
   height: 4rem;
 }
 
+.clear-float {
+  clear: both;
+}
+
 header {
   -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--light);
 }
 
-header nav {
+.menu {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -67,13 +67,13 @@ header nav {
   margin: auto;
 }
 
-header nav lord-icon {
+.menu lord-icon {
   display: block;
   margin: auto;
   margin-bottom: -10px;
 }
 
-header nav a {
+.menu__item {
   text-decoration: none;
   color: var(--primary);
   text-align: center;
@@ -82,7 +82,7 @@ header nav a {
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   position: relative;
 }
@@ -102,6 +102,7 @@ section .card {
   margin: auto;
   margin-bottom: 2rem;
   max-width: 400px;
+  background: var(--light);
 }
 
 section#projects {
@@ -236,6 +237,14 @@ ul {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
+.block {
+  display: block;
+}
+
 .stand_out {
   color: var(--main);
   white-space: nowrap;
@@ -247,11 +256,11 @@ ul {
   display: block;
 }
 
-.bg_white {
+section:nth-child(even) {
   background-color: var(--light);
 }
 
-.bg_shade {
+section:nth-child(odd) {
   background-color: var(--shade);
 }
 
@@ -268,45 +277,49 @@ q {
     top: 0;
     z-index: 9999;
   }
-  header nav {
+  .menu {
     -ms-grid-columns: (1fr)[8];
         grid-template-columns: repeat(8, 1fr);
   }
-  header nav lord-icon {
+  .menu lord-icon {
     width: 4rem;
     height: 4rem;
   }
-  header nav #theme_toggle {
+  .menu #theme_toggle {
     -ms-grid-column: col-start 8;
         grid-column-start: col-start 8;
   }
   .scroll-up {
     display: none;
   }
+  .project_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project_card {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+    padding: 1rem;
+  }
   .card_container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 2fr 1fr;
-        grid-template-columns: 1fr 2fr 1fr;
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .card_container .card {
     max-width: none;
     margin: 0;
-  }
-  #projects .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  #projects .container #proj_img {
-    width: 100%;
-    max-width: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 140px;
   }
   .card_content {
     display: -ms-grid;
@@ -314,11 +327,9 @@ q {
     -ms-grid-columns: 60% 40%;
         grid-template-columns: 60% 40%;
   }
-  .project_card {
-    max-width: 400px;
-  }
   .illustration {
-    max-width: 500px;
+    max-width: 450px;
+    margin: 4rem auto 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
