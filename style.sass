@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap')
 // VARIABLES
 
-
 $font-stack: 'Montserrat', sans-serif
 $font-size: 16px
-
-// MIXINS
-
 
 // STYLES
 html
     scroll-behavior: smooth
-    --dark: #2A2D34
-    --darker: #111111
+
+    --primary: #2B4162
+    --secondary: #385F71
     --main: #08A88A
-    --accent: #156064
-    --light: #FFFFFA
-    --shade: #FFEDDF
+    --light: #FFFBFA
+    --shade: #d8d8d8
     --links: #0066FF
+
     *
         box-sizing: border-box
     
@@ -32,7 +29,7 @@ html
 
 body
     background: var(--light)
-    color: var(--dark)
+    color: var(--primary)
     font-family: $font-stack
     font-size: $font-size
     position: relative
@@ -40,7 +37,7 @@ body
     line-height: 1.5
 
 body.dark_theme
-    background: var(--dark)
+    background: var(--primary)
     color: var(--light)
 
 .scroll-up
@@ -69,7 +66,7 @@ header
     
         a
             text-decoration: none
-            color: var(--dark)
+            color: var(--primary)
             text-align: center
             font-weight: 600
 
@@ -114,7 +111,7 @@ section
     margin: 2rem auto
 
     .project_title
-        color: var(--accent)
+        color: var(--secondary)
         margin-top: 0
 
     .project_info
@@ -126,7 +123,7 @@ section
         text-decoration: none
         font-weight: 600
         font-size: .9rem
-        background: var(--accent)
+        background: var(--secondary)
         padding: .7rem 1rem
         border-radius: 6px
         display: inline-block
@@ -150,7 +147,7 @@ section
 
 
         &.private
-            color: var(--dark)
+            color: var(--primary)
             &::before
                 content: ""
                 background-image: url(assets/icons/ionic-ios-eye-off.svg)
