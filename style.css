@@ -15,13 +15,12 @@ html * {
 }
 
 html.dark_theme {
-  --dark: #FFFFFA;
-  --darker: #FFEDDF;
+  --primary: #FFFFFA;
+  --secondary: #FFEDDF;
   --main: #08A88A;
   --accent: #0db4bd;
   --light: #2A2D34;
   --shade: #111111;
-  --links: #90bcff;
 }
 
 body {
