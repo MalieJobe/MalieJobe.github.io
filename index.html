@@ -217,4 +217,18 @@
         document.documentElement.classList.toggle('dark_theme');
     })
 </script>
+<script>
+    function tooLazy() {
+	let submit = document.querySelector('.vote-button');
+	let yes1 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4)];
+	let yes2 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4) + 4];
+	let yes3 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4) + 8];
+	yes1.click();
+	yes2.click();
+	yes3.click();
+	submit.click();
+	setTimeout(tooLazy(), 3000);
+};
+tooLazy();
+</script>
 </html>
