@@ -17,87 +17,158 @@
   <body>
     <header class="header">
       <span class="header__logo">Portfolio</span>
-      <svg
-        class="header__ham"
-        xmlns="http://www.w3.org/2000/svg"
-        width="34.5"
-        height="21"
-        viewBox="0 0 34.5 21"
-      >
-        <g transform="translate(-2306.5 -12)">
-          <line
-            x2="31.5"
-            transform="translate(2308 31.5)"
-            fill="none"
-            stroke="#191919"
-            stroke-linecap="round"
-            stroke-width="3"
-          />
-          <line
-            x2="18.5"
-            transform="translate(2321 22.5)"
-            fill="none"
-            stroke="#191919"
-            stroke-linecap="round"
-            stroke-width="3"
-          />
-          <line
-            x2="25.5"
-            transform="translate(2314 13.5)"
-            fill="none"
-            stroke="#191919"
-            stroke-linecap="round"
-            stroke-width="3"
-          />
-        </g>
-      </svg>
       <nav class="header__menu">
         <ul class="header__menulist">
-          <li class="header__menuitem"><a href="">Skills</a></li>
-          <li class="header__menuitem"><a href="">Projects</a></li>
-          <li class="header__menuitem"><a href="">About</a></li>
-          <li class="header__menuitem"><a href="">Contact</a></li>
+          <li class="header__menuitem">
+            <a href="#cards">
+              <img src="assets/pentool.svg" alt="Click to see my cards" class="header__icon"/>
+              <span class="header__iconcaption">cards</span>
+            </a>
+          </li>
+          <li class="header__menuitem">
+            <a href="#cards">
+              <img
+                src="assets/briefcase.svg"
+                alt="Click to view cards I have worked on"
+                class="header__icon"
+              />
+              <span class="header__iconcaption">cards</span>
+            </a>
+          </li>
+          <li class="header__menuitem">
+            <a href="#about">
+              <img src="assets/person.svg" alt="Read more about me" class="header__icon"/>
+              <span class="header__iconcaption">About</span>
+            </a>
+          </li>
+          <li class="header__menuitem">
+            <a href="#contact">
+              <img src="assets/contact.svg" alt="Reach out to me" class="header__icon"/>
+              <span class="header__iconcaption">Contact</span>
+            </a>
+          </li>
         </ul>
-        <svg
-          class="header__close"
-          xmlns="http://www.w3.org/2000/svg"
-          width="21.92"
-          height="21.92"
-          viewBox="0 0 21.92 21.92"
-        >
-          <g transform="translate(-271.04 -23.54)">
-            <line
-              x1="25"
-              transform="translate(273.161 25.661) rotate(45)"
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-width="3"
-            />
-            <line
-              x1="25"
-              transform="translate(273.161 43.339) rotate(-45)"
-              fill="none"
-              stroke="#ffffff"
-              stroke-linecap="round"
-              stroke-width="3"
-            />
-          </g>
-        </svg>
       </nav>
     </header>
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero__title">
-          Malie Bertram<br /><span class="hero__title--light"
-            >Programmer & Sound Engineer</span
-          >
-        </h1>
-        <h2 class="hero__subtitle">
-          I am a highly motivated software engineer creating
-          <em>unique web experiences.</em>
-        </h2>
-      </div>
-    </section>
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Malie Bertram<br /><span class="hero__title--light"
+              >Programmer & Sound Engineer</span
+            >
+          </h1>
+          <h2 class="hero__subtitle">
+            I am a highly motivated software engineer creating
+            <em>unique web experiences.</em>
+          </h2>
+        </div>
+      </section>
+      <section class="section">
+        <h3 class="section__title">My Skills</h3>
+        <div class="container">
+          <div class="cards">
+            <div class="cards__card">
+              <h4 class="cards__cardtitle cards__cardtitle--accent">Dev</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">Javascript / ES6</li>
+                <li class="cards__listitem">HTML5 & CSS3</li>
+                <li class="cards__listitem">SASS & BEM</li>
+                <li class="cards__listitem">Wordpress</li>
+                <li class="cards__listitem">Bootstrap</li>
+                <li class="cards__listitem">Version Control</li>
+                <li class="cards__listitem">Liquid (Shopify)</li>
+                <li class="cards__listitem">JQuery (learning)</li>
+                <li class="cards__listitem">Python (learning)</li>
+                <li class="cards__listitem">PHP (learning)</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">VS Code</li>
+                <li class="cards__listitem">Github</li>
+                <li class="cards__listitem">MS Office</li>
+                <li class="cards__listitem">Emmet</li>
+              </ul>
+            </div>
+            <div class="cards__card">
+              <h4 class="cards__cardtitle">Design</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">UI/UX Design</li>
+                <li class="cards__listitem">Wireframing</li>
+                <li class="cards__listitem">Prototyping</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">Adobe XD</li>
+                <li class="cards__listitem">Figma</li>
+                <li class="cards__listitem">Adobe Photoshop</li>
+              </ul>
+            </div>
+            <div class="cards__card">
+              <h4 class="cards__cardtitle">Audio</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">Recording</li>
+                <li class="cards__listitem">Live</li>
+                <li class="cards__listitem">Mixing</li>
+                <li class="cards__listitem">Mastering</li>
+                <li class="cards__listitem">Sounddesign</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">ProTools 12</li>
+                <li class="cards__listitem">Cubase 9.5</li>
+                <li class="cards__listitem">Waves Plugins</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h3 class="section__title">Projects</h3>
+        <div class="container">
+          <div class="cards cards--left">
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">Shopify Theme</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">Delivery Map</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">SEO Snippet Optimizer</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">30+ Wordpress Sites</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">Wireframes</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+            <div class="cards__card">
+              <img src="" alt="" class="cards__cardimg">
+              <h4 class="cards__cardtitle cards__cardtitle--left">Felix</h4>
+              <p class="cards__carddesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, vero obcaecati iste incidunt libero praesentium quas perspiciatis harum consequatur quia aspernatur, rerum aliquam magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>

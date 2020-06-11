@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.972" height="23.517" viewBox="0 0 22.972 23.517">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #191919;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="person" transform="translate(-220.69 -394)">
+    <path id="Pfad_42" data-name="Pfad 42" class="cls-1" d="M221.69,416.517V412.8c1.044-1.538,5.323-3.887,10.559-3.887s9.282,2,10.385,3.887c.058,1.594,0,3.713,0,3.713Z"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(226 394)">
+      <circle class="cls-3" cx="6" cy="6" r="6"/>
+      <circle class="cls-4" cx="6" cy="6" r="5"/>
+    </g>
+  </g>
+</svg>

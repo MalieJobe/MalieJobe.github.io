@@ -25,29 +25,53 @@ a
         border-bottom: 3px solid var(--accent)
     &__menu
         position: fixed
-        height: 100vh
-        width: 
         overflow: hidden
-        background: var(--primary)
-        top: 0
+        background: var(--secondary)
+        bottom: 0
         right: 0
-        width: 0vw
+        width: 100vw
         padding: 0em
         display: flex
         justify-content: space-between
+        box-shadow: 0px -5px 4px 0px #00000029
+        z-index: 2
     &__menulist
-        color: var(--secondary)
+        color: var(--primary)
+        width: 100vw
         padding-inline-start: 0
         margin-block-start: 0
         margin-block-end: 0
+        display: flex
+        justify-content: space-around
     &__menuitem
         list-style: none
-        font-size: 1.4em
+        display: inline-block
+        font-size: 0.8em
         text-transform: uppercase
-        padding-bottom: 0.4em
-        
+        a
+            padding: 0.5em 1em
+            display: inline-block
+    &__icon
+        display: block
+        margin-left: 50%
+        transform: translateX(-50%)
+        padding-bottom: 5px
+        &caption
+            font-size: 1.1em
+
+.section
+    text-align: center
+    margin: 6em auto
+    &__title
+        font-size: 5em
+        font-weight: 600
+        white-space: nowrap
+        color: var(--primary)
+        opacity: 0.1
+        margin: 0.4em auto
+  
 .hero
-    margin-top: 6em
+    text-align: left
     &__title
         font-weight: 400
         font-size: 1.12em
@@ -59,3 +83,41 @@ a
         font-size: 2em
         em
             font-weight: 600
+
+.cards
+    &--left
+        text-align: left
+    &__card
+        outline: 3px solid
+        position: relative
+        padding: 1em
+        margin-bottom: 3em
+    &__cardtitle
+        font-weight: 600
+        font-size: 1.3em
+        text-transform: uppercase
+        margin: 0
+        padding-left: 10px
+        padding-right: 10px
+        background: var(--secondary)
+        position: absolute
+        top: -0.8em
+        left: 50%
+        transform: translateX(-50%)
+        &--left
+            left: unset
+            transform: unset
+        &--accent
+            color: var(--accent)
+    &__list
+        list-style-type: none
+        margin-block-start: 0
+        margin-block-end: 0
+        padding-inline-start: 0
+        columns: 2
+        text-align: left
+    &__toolkit
+        font-size: 1em
+        border-top: 1px solid
+        padding-top: 0.5em
+        margin: 1.5em auto 
