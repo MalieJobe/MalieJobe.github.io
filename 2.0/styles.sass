@@ -3,22 +3,34 @@
 \:root
     --primary: #191919
     --secondary: #ffffff
-    --accent: #574AE2
-    font-size: 16px
+    --accent: #5c75ff
+
+@media screen and (min-width: 700px)
+    \:root
+        --primary: #ffffff
+        --secondary: #191919
+        --accent: #5c75ff
+
 *
     box-sizing: border-box
+html
+    scroll-behavior: smooth
 body
-    margin: 1em
+    margin: 0
     font-family: 'Raleway', sans-serif
+    color: var(--primary)
+    background: var(--secondary)
+    font-size: 16px
 a
     text-decoration: none
     color: unset
 
 .header
-    width: 100%
+    width: calc(100% - 2em)
     display: flex
     justify-content: space-between
     align-items: center
+    margin: 1em auto auto 1em
     &__logo
         font-size: 2em
         font-weight: 600
@@ -28,7 +40,7 @@ a
         overflow: hidden
         background: var(--secondary)
         bottom: 0
-        right: 0
+        left: 0
         width: 100vw
         padding: 0em
         display: flex
@@ -37,7 +49,7 @@ a
         z-index: 2
     &__menulist
         color: var(--primary)
-        width: 100vw
+        width: 100%
         padding-inline-start: 0
         margin-block-start: 0
         margin-block-end: 0
@@ -61,7 +73,12 @@ a
 
 .section
     text-align: center
-    margin: 6em auto
+    margin: auto 1em
+    padding-top: 3em
+    padding-bottom: 3em
+    &--stretch
+        margin-left: 0
+        margin-right: 0
     &__title
         font-size: 5em
         font-weight: 600
@@ -69,6 +86,8 @@ a
         color: var(--primary)
         opacity: 0.1
         margin: 0.4em auto
+        &--inverted
+            color: var(--secondary)
   
 .hero
     text-align: left
@@ -92,6 +111,11 @@ a
         position: relative
         padding: 1em
         margin-bottom: 3em
+        &--inverted
+            color: var(--secondary)
+            margin: auto 1em
+            padding-bottom: 4em
+            font-size: 1.2em
     &__cardtitle
         font-weight: 600
         font-size: 1.3em
@@ -116,8 +140,65 @@ a
         padding-inline-start: 0
         columns: 2
         text-align: left
+        &--one-col
+            columns: 1
+            list-style-type: unset
+            padding-inline-start: 20px
+    &__cardsummary
+        text-align: left
     &__toolkit
         font-size: 1em
         border-top: 1px solid
         padding-top: 0.5em
-        margin: 1.5em auto 
+        margin: 1.5em auto
+
+.about
+    background: var(--primary)
+    &__portrait
+        width: calc(100% - 6em)
+        margin: 3em
+        margin-top: -1.4em
+.expand-summary
+    font-size: 0.7em
+    display: block
+    line-height: 2
+    color: #008eff
+
+.contact
+    &__form
+        text-align: left
+        &label
+            display: block
+            margin-bottom: 4px
+        &input
+            display: block
+            width: calc(100%)
+            border-radius: 0
+            border: 3px solid
+            margin-bottom: 1em
+            min-height: 3em
+            background: var(--secondary)
+            &--large
+                min-height: 8em
+            &--inverted
+                background: var(--primary)
+                color: var(--secondary)
+                text-transform: uppercase
+                font-size: 1em
+                letter-spacing: 5px
+                border: none
+
+
+
+details[open] summary ~ * 
+    animation: sweep .5s ease-in-out
+@keyframes sweep
+    0%
+        opacity: 0
+        margin-left: -10px
+    100%
+        opacity: 1
+        margin-left: 0px
+details[open] .expand-summary
+    display: none
+
