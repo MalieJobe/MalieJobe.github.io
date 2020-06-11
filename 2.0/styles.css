@@ -205,6 +205,10 @@ a {
   color: var(--accent);
 }
 
+.cards__cardimg {
+  width: 100%;
+}
+
 .cards__list {
   list-style-type: none;
   -webkit-margin-before: 0;
