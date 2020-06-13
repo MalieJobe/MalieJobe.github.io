@@ -63,7 +63,7 @@
             >
           </h2>
         </div>
-        <a href="#skills">
+        <a href="#skills" aria-label="Scroll down">
           <svg
             class="hero__scroll"
             xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@
           <div class="cards cards--left">
             <div class="cards__card">
               <img
-                src="assets/shopify-theme.png"
+                src="assets/rsz_shopify-theme.png"
                 alt=""
                 class="cards__cardimg"
               />
@@ -183,7 +183,7 @@
             </div>
             <div class="cards__card">
               <img
-                src="assets/delivery-map.png"
+                src="assets/rsz_delivery-map.png"
                 alt=""
                 class="cards__cardimg"
               />
@@ -199,7 +199,7 @@
             </div>
             <div class="cards__card">
               <img
-                src="assets/snippet-optimizer.png"
+                src="assets/rsz_snippet-optimizer.png"
                 alt=""
                 class="cards__cardimg"
               />
@@ -277,7 +277,7 @@
             </details>
           </div>
           <img
-            src="assets/malie_bertram.jpeg"
+            src="assets/rsz_malie_bertram.jpg"
             alt="A picture of me sitting on a staircase"
             class="about__portrait"
           />
@@ -293,13 +293,19 @@
           >
             <div class="contact__pair">
               <label for="name" class="contact__formlabel">Your Name:</label>
-              <input type="text" name="name" class="contact__forminput" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__forminput"
+              />
 
               <label for="_replyto" class="contact__formlabel"
                 >Your Email:</label
               >
               <input
                 type="email"
+                id="_replyto"
                 name="_replyto"
                 class="contact__forminput"
                 required
@@ -311,6 +317,7 @@
               >
               <textarea
                 name="message"
+                id="message"
                 class="contact__forminput contact__forminput--large"
                 required
               ></textarea>
