@@ -112,6 +112,7 @@ a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding-bottom: 5px;
+  stroke: var(--primary);
 }
 
 .header__iconcaption {
@@ -185,6 +186,10 @@ a {
   height: 40px;
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.hero__scroll path {
+  stroke: var(--primary);
 }
 
 .cards {
@@ -266,6 +271,10 @@ a {
   text-align: left;
 }
 
+.cards__cardsummary summary {
+  cursor: pointer;
+}
+
 .cards__toolkit {
   font-size: 1em;
   border-top: 1px solid;
@@ -324,6 +333,24 @@ a {
   font-size: 1em;
   letter-spacing: 5px;
   border: none;
+}
+
+.contact__forminput:hover {
+  cursor: text;
+}
+
+.contact__forminput:focus {
+  border: 3px solid var(--accent);
+}
+
+.contact__forminput[type=submit] {
+  border: 3px solid var(--primary);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact__forminput[type=submit]:hover {
+  border: 3px solid var(--accent);
 }
 
 .cards__cardsummary[open] summary ~ * {

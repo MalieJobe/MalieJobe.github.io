@@ -72,6 +72,7 @@ a
         margin-left: 50%
         transform: translateX(-50%)
         padding-bottom: 5px
+        stroke: var(--primary)
         &caption
             font-size: 1.1em
 
@@ -120,6 +121,9 @@ a
         width: 40px
         height: 40px
         animation: bounce 1s infinite
+        g
+        path
+            stroke: var(--primary)
 
 .cards
     padding-right: 3px
@@ -170,6 +174,8 @@ a
             padding-inline-start: 20px
     &__cardsummary
         text-align: left
+        summary
+            cursor: pointer
     &__toolkit
         font-size: 1em
         border-top: 1px solid
@@ -215,6 +221,15 @@ a
                 font-size: 1em
                 letter-spacing: 5px
                 border: none
+            &:hover
+                cursor: text
+            &:focus
+                border: 3px solid var(--accent)
+            &[type=submit]
+                border: 3px solid var(--primary)
+                transition: all 0.4s ease
+                &:hover
+                    border: 3px solid var(--accent)
 
 
 .cards__cardsummary[open] summary ~ * 
@@ -380,6 +395,7 @@ a
             &__card
                 &--offcenter
                     width: 60%
+
         
 
 @keyframes bounce

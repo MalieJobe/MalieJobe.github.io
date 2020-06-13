@@ -1,19 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="26.414" height="26.414" viewBox="0 0 26.414 26.414">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #000;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2px;
-      }
-    </style>
-  </defs>
-  <g id="pentool" transform="translate(-1.586 -1.586)">
-    <path id="Pfad_35" data-name="Pfad 35" class="cls-1" d="M18,26.378,26.378,18l3.591,3.591-8.378,8.378Z" transform="translate(-2.969 -2.969)"/>
-    <path id="Pfad_36" data-name="Pfad 36" class="cls-1" d="M22.151,16.166l-1.8-8.977L3,3,7.189,20.355l8.977,1.8Z"/>
-    <path id="Pfad_37" data-name="Pfad 37" class="cls-1" d="M3,3l9.08,9.08"/>
-    <path id="Pfad_38" data-name="Pfad 38" class="cls-1" d="M18.288,15.894A2.394,2.394,0,1,1,15.894,13.5,2.394,2.394,0,0,1,18.288,15.894Z" transform="translate(-2.095 -2.095)"/>
-  </g>
+<g transform="translate(-1.586 -1.586)">
+<path d="M18,26.378,26.378,18l3.591,3.591-8.378,8.378Z" transform="translate(-2.969 -2.969)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<path d="M22.151,16.166l-1.8-8.977L3,3,7.189,20.355l8.977,1.8Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<path d="M3,3l9.08,9.08" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+<path d="M18.288,15.894A2.394,2.394,0,1,1,15.894,13.5,2.394,2.394,0,0,1,18.288,15.894Z" transform="translate(-2.095 -2.095)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</g>
 </svg>
