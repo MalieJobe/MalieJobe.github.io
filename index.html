@@ -1,234 +1,522 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio - Malie Bertram </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="top">
-        <nav class="menu">
-            <a href="#hero" class="menu__item">
-                <lord-icon animation="hover" src="assets/animated_icons/63-home-outline.json"></lord-icon>
-                <span>Home</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malie Bertram | Software Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="I am a highly motivated software engineer creating unique web experiences. Check out my work!"
+    />
+    <meta
+      name="keywords"
+      content="developer,software engineer,frontend developer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="header__logo">Portfolio</span>
+      <nav class="header__menu">
+        <ul class="header__menulist">
+          <li class="header__menuitem">
+            <a href="#skills">
+              <svg
+                class="header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26.414"
+                height="26.414"
+                viewBox="0 0 26.414 26.414"
+              >
+                <g transform="translate(-1.586 -1.586)">
+                  <path
+                    d="M18,26.378,26.378,18l3.591,3.591-8.378,8.378Z"
+                    transform="translate(-2.969 -2.969)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22.151,16.166l-1.8-8.977L3,3,7.189,20.355l8.977,1.8Z"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M3,3l9.08,9.08"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M18.288,15.894A2.394,2.394,0,1,1,15.894,13.5,2.394,2.394,0,0,1,18.288,15.894Z"
+                    transform="translate(-2.095 -2.095)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+              <span class="header__iconcaption">Skills</span>
             </a>
-            <a href="#skills" class="menu__item">
-                <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
-                <span>Skills</span>
+          </li>
+          <li class="header__menuitem">
+            <a href="#projects">
+              <svg
+                class="header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28.667"
+                height="26"
+                viewBox="0 0 28.667 26"
+              >
+                <g transform="translate(-2 -3.5)">
+                  <path
+                    d="M5.667,10.5H27a2.62,2.62,0,0,1,2.667,2.571V25.929A2.62,2.62,0,0,1,27,28.5H5.667A2.62,2.62,0,0,1,3,25.929V13.071A2.62,2.62,0,0,1,5.667,10.5Z"
+                    transform="translate(0 0)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22.889,28.5V7.167A2.7,2.7,0,0,0,20.167,4.5H14.722A2.7,2.7,0,0,0,12,7.167V28.5"
+                    transform="translate(-1.111 0)"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+              <span class="header__iconcaption">Projects</span>
             </a>
-            <a href="#projects" class="menu__item">
-                <lord-icon animation="morph" src="assets/animated_icons/399-grid-list-morph-outline.json"></lord-icon>
-                <span>Projects</span>
+          </li>
+          <li class="header__menuitem">
+            <a href="#about">
+              <svg
+                class="header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22.972"
+                height="23.517"
+                viewBox="0 0 22.972 23.517"
+              >
+                <g transform="translate(-220.69 -394)">
+                  <path
+                    d="M221.69,416.517V412.8c1.044-1.538,5.323-3.887,10.559-3.887s9.282,2,10.385,3.887c.058,1.594,0,3.713,0,3.713Z"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                  <g
+                    transform="translate(226 394)"
+                    stroke-width="2"
+                    fill="none"
+                  >
+                    <circle cx="6" cy="6" r="6" stroke="none" />
+                    <circle cx="6" cy="6" r="5" fill="none" />
+                  </g>
+                </g>
+              </svg>
+              <span class="header__iconcaption">About</span>
             </a>
-            <a href="#about" class="menu__item">
-                <lord-icon animation="hover" src="assets/animated_icons/268-avatar-man-outline.json"></lord-icon>
-                <span>About</span>
+          </li>
+          <li class="header__menuitem">
+            <a href="#contact">
+              <svg
+                class="header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="21.096"
+                height="23.592"
+                viewBox="0 0 21.096 23.592"
+              >
+                <path
+                  d="M328.078,402.172s-5.354-3.182-7.249,1.913.065,8.36,2.939,7.446,3.825-10.312,3.825-10.312-2.388,8.745.355,10.312,6.14-3.266,4.964-9.144-7-7.985-11.691-6.4-7.822,7.4-6.989,12.671,2.368,6.351,4.572,7.707,9.144,0,9.144,0"
+                  transform="translate(-313.085 -394.439)"
+                  fill="none"
+                  stroke-width="2"
+                />
+              </svg>
+              <span class="header__iconcaption">Contact</span>
             </a>
-            <a href="#contact" class="menu__item">
-                <lord-icon animation="morph" src="assets/animated_icons/145-envelope-mail-notification-open-morph-outline.json"></lord-icon>
-                <span>Contact</span>
-            </a>
-            <a id="theme_toggle" class="menu__item">
-                <lord-icon id="theme_toggle" animation="morph" src="assets/animated_icons/397-toggle-radio-button-1-morph-outline.json"></lord-icon>
-                <span>Dark Mode</span>
-            </a>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section id="hero" class="center">
+    <main class="main">
+      <section class="section hero">
         <div class="container">
-            <h1>Malie Bertram</h1>
-            <h2>Designer, Software Engineer <span class="stand_out">& Audio Engineer</span></h2>
-            <span>
-                <q>When something is important enough, you do it even if the odds are not in your favor.</q>
-                - Elon Musk
-            </span>
+          <h1 class="hero__title">
+            Malie Bertram<br /><span class="hero__title--light"
+              >Programmer & Sound Engineer</span
+            >
+          </h1>
+          <h2 class="hero__subtitle">
+            I am a highly motivated software engineer creating
+            <em
+              >unique web experiences<span class="hero__subtitle--accent"
+                >.</span
+              ></em
+            >
+          </h2>
         </div>
-        <img class="illustration" src="assets/illustrations/undraw_static_website_0107.svg" alt="">
-    </section>
-    <section id="skills">
+        <a href="#skills" aria-label="Scroll down">
+          <svg
+            class="hero__scroll"
+            xmlns="http://www.w3.org/2000/svg"
+            width="70.253"
+            height="70.253"
+            viewBox="0 0 70.253 70.253"
+          >
+            <g transform="translate(-1.5 -1.5)">
+              <path
+                d="M70.253,36.627A33.627,33.627,0,1,1,36.627,3,33.627,33.627,0,0,1,70.253,36.627Z"
+                transform="translate(0 0)"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+              <path
+                d="M12,18,25.451,31.451,38.9,18"
+                transform="translate(11.176 18.627)"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+              <path
+                d="M18,12V38.9"
+                transform="translate(18.627 11.176)"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+            </g>
+          </svg>
+        </a>
+      </section>
+      <section class="section skills" id="skills">
+        <h3 class="section__title">My Skills</h3>
         <div class="container">
-            <h2 class="section_title">My <span class="stand_out">Skills</span></h2>
-            <div class="card_container">
-                <div class="card">
-                    <div class="center">
-                        <lord-icon animation="hover" src="assets/animated_icons/117-vector-design-pen-outline.json"></lord-icon>
-                    <h3>Design</h3>
-                    </div>
-                    <ul>
-                        <li>UI/UX Design</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
-                    </ul>
-                    <h4>Toolkit</h4>
-                    <ul>
-                        <li>Adobe XD</li>
-                        <li>Figma</li>
-                        <li>Adobe Photoshop</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="center">
-                        <lord-icon animation="hover" src="assets/animated_icons/479-computer-laptop-notebook-outline.json"></lord-icon>
-                        <h3>Dev</h3>
-                    </div>
-                    <div class="card_content">
-                        <ul>
-                            <li>Javascript / ES6</li>
-                            <li>HTML5</li>
-                            <li>CSS3 / SASS</li>
-                            <li>Wordpress</li>
-                            <li>Bootstrap</li>
-                            <li>Version Control / Git</li>
-                            <li>Shopify's {% .liquid %}</li>
-                            <li>JQuery (learning)</li>
-                            <li>Python (learning)</li>
-                            <li>PHP (learning)</li>
-                        </ul>
-                        <div class="wrapper">
-                            <h4>Toolkit</h4>
-                            <ul>
-                                <li>VS Code</li>
-                                <li>Github</li>
-                            </ul>
-                            <h4>Other</h4>
-                            <ul>
-                                <li>Asana</li>
-                                <li>MS Office</li>
-                                <li>Slack</li>
-                                <li>Mailchimp</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="center">
-                        <lord-icon animation="hover" src="assets/animated_icons/188-microphone-recording-outline.json"></lord-icon>
-                        <h3>Audio</h3>
-                    </div>
-                    <ul>
-                        <li>Recording</li>
-                        <li>Live</li>
-                        <li>Mixing</li>
-                        <li>Mastering</li>
-                        <li>Sound Design</li>
-                    </ul>
-                    <h4>Toolkit</h4>
-                    <ul>
-                        <li>Cubase 9.5</li>
-                        <li>ProTools 12</li>
-                        <li>WavesPlugins</li>
-                    </ul>
-                </div>
+          <div class="cards">
+            <div
+              class="cards__card"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="0"
+              data-aos-duration="750"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle cards__cardtitle--accent">Dev</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">Javascript / ES6</li>
+                <li class="cards__listitem">HTML5 & CSS3</li>
+                <li class="cards__listitem">SASS & BEM</li>
+                <li class="cards__listitem">Wordpress</li>
+                <li class="cards__listitem">Bootstrap</li>
+                <li class="cards__listitem">Version Control</li>
+                <li class="cards__listitem">Liquid (Shopify)</li>
+                <li class="cards__listitem">JQuery (learning)</li>
+                <li class="cards__listitem">Python (learning)</li>
+                <li class="cards__listitem">PHP (learning)</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">VS Code</li>
+                <li class="cards__listitem">Github</li>
+                <li class="cards__listitem">MS Office</li>
+                <li class="cards__listitem">Emmet</li>
+              </ul>
             </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section_title">Projects <span class="stand_out">& Work</span></h2>
-        <div class="container">
-            <div class="project_container">
-                <div class="project_card">
-                    <img src="assets/images/img1.png" alt="" class="project_img">
-                    <div class="project_info">
-                        <h3 class="project_title accent">Google Snippet Optimizer</h3>
-                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                        <a href="https://www.claneo.com/snippet-optimizer/" rel="noopener noreferrer" class="project_btn">View Project</a>
-                        <a href="" class="project_src active">View Source</a>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <img src="assets/images/img2.png" alt="" class="project_img">
-                    <div class="project_info">
-                        <h3 class="project_title accent">Climate Change Map</h3>
-                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                        <a href="https://heizung.de/temperaturentwicklung-in-deutschland/" rel="noopener noreferrer" class="project_btn">View Project</a>
-                        <span class="project_src private">Source Private</span>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <img src="assets/images/img3.png" alt="" class="project_img">
-                    <div class="project_info">
-                        <h3 class="project_title accent">Shopify Theme</h3>
-                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                        <a href="https://degequ.de/" rel="noopener noreferrer" class="project_btn">View Project</a>
-                        <span class="project_src private">Source Private</span>
-                    </div>    
-                </div>
-                <div class="project_card">
-                    <img src="assets/images/img4.png" alt="" class="project_img">
-                    <div class="project_info">   
-                        <h3 class="project_title accent">Online Classes w/ Wordpress</h3>
-                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                        <a href="https://theflowofdharam.com/" class="project_btn">View Project</a>
-                        <a href="https://bioresonance.info/" class="project_btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <img src="assets/images/img5.png" alt="" class="project_img">
-                    <div class="project_info">
-                        <h3 class="project_title accent">Design & Wireframe</h3>
-                        <p class="project_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
-                        <a href="" class="project_btn">View Project</a>
-                    </div>
-                </div>
+            <div
+              class="cards__card"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="200"
+              data-aos-duration="750"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle">Design</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">UI/UX Design</li>
+                <li class="cards__listitem">Wireframing</li>
+                <li class="cards__listitem">Prototyping</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">Adobe XD</li>
+                <li class="cards__listitem">Figma</li>
+                <li class="cards__listitem">Adobe Photoshop</li>
+              </ul>
             </div>
+            <div
+              class="cards__card"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="40"
+              data-aos-duration="750"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle">Audio</h4>
+              <ul class="cards__list">
+                <li class="cards__listitem">Recording</li>
+                <li class="cards__listitem">Live</li>
+                <li class="cards__listitem">Mixing</li>
+                <li class="cards__listitem">Mastering</li>
+                <li class="cards__listitem">Sounddesign</li>
+              </ul>
+              <h5 class="cards__toolkit">Toolkit</h5>
+              <ul class="cards__list">
+                <li class="cards__listitem">ProTools 12</li>
+                <li class="cards__listitem">Cubase 9.5</li>
+                <li class="cards__listitem">Waves Plugins</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <section id="about">
+      </section>
+      <section class="section projects" id="projects">
+        <h3 class="section__title">Projects</h3>
         <div class="container">
-            <img style="float:right" src="assets/illustrations/undraw_dev_productivity_umsq.svg" alt="" class="illustration">
-            <h2 class="section_title">About <span class="stand_out">Me</span></h2>
-            <p>Hello. My name is Malie Bertram, I am a software & audio engineer. I started out at thirteen years old, building static websites in my free time. Later I got into CMS's which eventually brought me to <em>real</em> programming languages.</p>
-            <p>At the moment I am based in Berlin, Germany. I have a passion for music, technology and (human) languages, three of which I speak fluendly: German, English & Spanish. I got my degree in audio engineering out of pure interest and dove into the world of code right after. Since then I have been both self-employed & employed at mid-sized firms for multiple years.<br>Here are some fun facts about me:</p>
-            <ul>
+          <div class="cards cards--left">
+            <div
+              class="cards__card"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <img
+                src="assets/rsz_shopify-theme.png"
+                alt=""
+                class="cards__cardimg"
+              />
+              <h4 class="cards__cardtitle cards__cardtitle--left">
+                Shopify Theme
+              </h4>
+              <p class="cards__carddesc">
+                My most recent project involved getting comfortable with
+                Shopify's templateting language "Liquid". After many hours of
+                hard work the e-commerce shop is finally live and selling.
+              </p>
+            </div>
+            <div
+              class="cards__card"
+              data-aos="fade-down"
+              data-aos-delay="200"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <img
+                src="assets/rsz_delivery-map.png"
+                alt=""
+                class="cards__cardimg"
+              />
+              <h4 class="cards__cardtitle cards__cardtitle--left">
+                Delivery Map
+              </h4>
+              <p class="cards__carddesc">
+                I worked with SVGs and animations to create a map displaying the
+                active delivery zone for "ZipJet Limited" (now "Laundrapp").
+                Users could click thier district and be redirected to the
+                respective page.
+              </p>
+            </div>
+            <div
+              class="cards__card"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <img
+                src="assets/rsz_snippet-optimizer.png"
+                alt=""
+                class="cards__cardimg"
+              />
+              <h4 class="cards__cardtitle cards__cardtitle--left">
+                SEO Snippet Optimizer
+              </h4>
+              <p class="cards__carddesc">
+                Most available SEO tools check the title length by character
+                count, but google only cares about the width in pixels. This
+                Snippet-Optimizer takes care of that.
+              </p>
+            </div>
+            <div
+              class="cards__card"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle cards__cardtitle--left">
+                20+ Wordpress Sites
+              </h4>
+              <p class="cards__carddesc">
+                Till this day I have worked on over 20 Wordpress websites. Here,
+                my efforts range from content management to theme & plugin
+                customizations.
+              </p>
+            </div>
+            <div
+              class="cards__card"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle cards__cardtitle--left">
+                Wireframes
+              </h4>
+              <p class="cards__carddesc">
+                Before writing any code for a project I create a wireframe.
+                Using Adobe XD and Figma I have created single page applications
+                and entire websites, all while keeping responsiveness and UX in
+                mind.
+              </p>
+            </div>
+            <div
+              class="cards__card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="750"
+              data-aos-mirror="false"
+              data-aos-once="false"
+            >
+              <h4 class="cards__cardtitle cards__cardtitle--left">Lorem</h4>
+              <p class="cards__carddesc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                vero obcaecati iste incidunt libero praesentium quas
+                perspiciatis harum consequatur quia aspernatur, rerum aliquam
+                magni, aperiam dolorem laudantium voluptatibus autem totam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--stretch about" id="about">
+        <h3 class="section__title section__title--inverted">About Me</h3>
+        <div class="container">
+          <div
+            class="cards__card cards__card--inverted cards__card--offcenter"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          >
+            <details class="cards__cardsummary">
+              <summary>
+                <p>
+                  My name is <strong>Malie Bertram</strong>, I am a software- &
+                  audio engineer. I started out at thirteen years old, building
+                  static websites in my free time. Later I got into CMS's which
+                  eventually brought me to real programming languages.
+                  <span class="expand-summary">( Click to expand )</span>
+                </p>
+              </summary>
+              <p>
+                At the moment I am based in Berlin, Germany. I have a passion
+                for music, technology and (human) languages, three of which I
+                speak fluendly: German, English & Spanish. I got my
+                <em>degree in audio engineering</em> out of pure interest and
+                dove into the world of code right after. Since then I have been
+                both self-employed & employed at mid-sized firms for multiple
+                years.<br />Here are some fun facts about me:
+              </p>
+              <ul class="cards__list cards__list--one-col">
                 <li>I am a certified Yoga Teacher</li>
                 <li>I play 4 instruments</li>
                 <li>I've worked on 3 published studio albums</li>
                 <li>I lived in India for four years</li>
-            </ul>
-            <div class="clear-float"></div>
+              </ul>
+            </details>
+          </div>
+          <img
+            src="assets/rsz_malie_bertram.jpg"
+            alt="Picture of the page author"
+            class="about__portrait"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="750"
+            data-aos-mirror="false"
+            data-aos-once="false"
+          />
         </div>
-    </section>
-
-    <section id="contact">
+      </section>
+      <section class="section contact" id="contact">
         <div class="container">
-            <img style="float:left" src="assets/illustrations/undraw_delivery_address_03n0.svg" alt="" class="illustration">
-            <h2 class="section_title right">Contact, Download <span class="stand_out">& more</span></h2>
-            <p class="right">My email address is <a href="mailto:maliejobe@outlook.de">maliejobe@outlook.de</a>. Contact me for a project or hire.</p>
-            <a class="right block" download href="">Download my Resume</a>
-            <p class="right">Designed by Me<br>
-               Code by Me<br>
-               Animated Icons by <a href="https://lordicon.com/" target="_blank" rel="noopener noreferrer">LordIcon</a><br>
-               Illustrations by <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a>
-            </p>
-            <div class="clear-float"></div>
+          <h3 class="section__title">Contact</h3>
+          <form
+            action="https://formspree.io/mbjzydqp"
+            method="POST"
+            class="contact__form"
+          >
+            <div class="contact__pair">
+              <label for="name" class="contact__formlabel">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__forminput"
+              />
+
+              <label for="_replyto" class="contact__formlabel"
+                >Your Email:</label
+              >
+              <input
+                type="email"
+                id="_replyto"
+                name="_replyto"
+                class="contact__forminput"
+                required
+              />
+            </div>
+            <div class="contact__pair contact__pair--stretch">
+              <label for="message" class="contact__formlabel"
+                >Your Message:</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                class="contact__forminput contact__forminput--large"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Send"
+              class="contact__forminput contact__forminput--inverted"
+            />
+          </form>
         </div>
-    </section>
-    
-    <a href="#top" class="scroll-up">
-        <img src="assets/icons/scroll-up.svg" alt="">
-    </a>
-</body>
-<script src="lord-icon.js"></script>
-<script>
-    let toggle = document.getElementById('theme_toggle');
-    toggle.addEventListener('click', function() {
-        document.documentElement.classList.toggle('dark_theme');
-    })
-</script>
-<script>
-    function tooLazy() {
-	let submit = document.querySelector('.vote-button');
-	let yes1 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4)];
-	let yes2 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4) + 4];
-	let yes3 = document.getElementsByClassName('score-description')[Math.floor(Math.random() * 4) + 8];
-	yes1.click();
-	yes2.click();
-	yes3.click();
-	submit.click();
-	setTimeout(tooLazy(), 3000);
-};
-tooLazy();
-</script>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
