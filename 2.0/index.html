@@ -21,48 +21,32 @@
         <ul class="header__menulist">
           <li class="header__menuitem">
             <a href="#skills">
-              <img
-                src="assets/pentool.svg"
-                alt="Click to see my cards"
-                class="header__icon"
-              />
+              <img src="assets/pentool.svg" alt="" class="header__icon" />
               <span class="header__iconcaption">Skills</span>
             </a>
           </li>
           <li class="header__menuitem">
             <a href="#projects">
-              <img
-                src="assets/briefcase.svg"
-                alt="Click to view cards I have worked on"
-                class="header__icon"
-              />
+              <img src="assets/briefcase.svg" alt="" class="header__icon" />
               <span class="header__iconcaption">Projects</span>
             </a>
           </li>
           <li class="header__menuitem">
             <a href="#about">
-              <img
-                src="assets/person.svg"
-                alt="Read more about me"
-                class="header__icon"
-              />
+              <img src="assets/person.svg" alt="" class="header__icon" />
               <span class="header__iconcaption">About</span>
             </a>
           </li>
           <li class="header__menuitem">
             <a href="#contact">
-              <img
-                src="assets/contact.svg"
-                alt="Reach out to me"
-                class="header__icon"
-              />
+              <img src="assets/contact.svg" alt="" class="header__icon" />
               <span class="header__iconcaption">Contact</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">
@@ -72,11 +56,54 @@
           </h1>
           <h2 class="hero__subtitle">
             I am a highly motivated software engineer creating
-            <em>unique web experiences.</em>
+            <em
+              >unique web experiences<span class="hero__subtitle--accent"
+                >.</span
+              ></em
+            >
           </h2>
         </div>
+        <a href="#skills">
+          <svg
+            class="hero__scroll"
+            xmlns="http://www.w3.org/2000/svg"
+            width="70.253"
+            height="70.253"
+            viewBox="0 0 70.253 70.253"
+          >
+            <g transform="translate(-1.5 -1.5)">
+              <path
+                d="M70.253,36.627A33.627,33.627,0,1,1,36.627,3,33.627,33.627,0,0,1,70.253,36.627Z"
+                transform="translate(0 0)"
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+              <path
+                d="M12,18,25.451,31.451,38.9,18"
+                transform="translate(11.176 18.627)"
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+              <path
+                d="M18,12V38.9"
+                transform="translate(18.627 11.176)"
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+            </g>
+          </svg>
+        </a>
       </section>
-      <section class="section" id="skills">
+      <section class="section skills" id="skills">
         <h3 class="section__title">My Skills</h3>
         <div class="container">
           <div class="cards">
@@ -135,7 +162,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="projects">
+      <section class="section projects" id="projects">
         <h3 class="section__title">Projects</h3>
         <div class="container">
           <div class="cards cards--left">
@@ -186,9 +213,8 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="" alt="" class="cards__cardimg" />
               <h4 class="cards__cardtitle cards__cardtitle--left">
-                30+ Wordpress Sites
+                20+ Wordpress Sites
               </h4>
               <p class="cards__carddesc">
                 Till this day I have worked on over 20 Wordpress websites. Here,
@@ -197,7 +223,6 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="" alt="" class="cards__cardimg" />
               <h4 class="cards__cardtitle cards__cardtitle--left">
                 Wireframes
               </h4>
@@ -209,7 +234,6 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="" alt="" class="cards__cardimg" />
               <h4 class="cards__cardtitle cards__cardtitle--left">Felix</h4>
               <p class="cards__carddesc">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
@@ -222,13 +246,13 @@
         </div>
       </section>
       <section class="section section--stretch about" id="about">
+        <h3 class="section__title section__title--inverted">About Me</h3>
         <div class="container">
-          <h3 class="section__title section__title--inverted">About Me</h3>
-          <div class="cards__card cards__card--inverted">
+          <div class="cards__card cards__card--inverted cards__card--offcenter">
             <details class="cards__cardsummary">
               <summary>
                 <p>
-                  My name is <strong>Malie Bertram</strong>, I am a software &
+                  My name is <strong>Malie Bertram</strong>, I am a software- &
                   audio engineer. I started out at thirteen years old, building
                   static websites in my free time. Later I got into CMS's which
                   eventually brought me to real programming languages.
@@ -267,28 +291,30 @@
             method="POST"
             class="contact__form"
           >
-            <label for="name" class="contact__formlabel">Your Name:</label>
-            <input
-              type="text"
-              name="name"
-              class="contact__forminput"
-              required
-            />
-            <label for="_replyto" class="contact__formlabel">Your Email:</label>
-            <input
-              type="email"
-              name="_replyto"
-              class="contact__forminput"
-              required
-            />
-            <label for="message" class="contact__formlabel"
-              >Your Message:</label
-            >
-            <textarea
-              name="message"
-              class="contact__forminput contact__forminput--large"
-              required
-            ></textarea>
+            <div class="contact__pair">
+              <label for="name" class="contact__formlabel">Your Name:</label>
+              <input type="text" name="name" class="contact__forminput" />
+
+              <label for="_replyto" class="contact__formlabel"
+                >Your Email:</label
+              >
+              <input
+                type="email"
+                name="_replyto"
+                class="contact__forminput"
+                required
+              />
+            </div>
+            <div class="contact__pair contact__pair--stretch">
+              <label for="message" class="contact__formlabel"
+                >Your Message:</label
+              >
+              <textarea
+                name="message"
+                class="contact__forminput contact__forminput--large"
+                required
+              ></textarea>
+            </div>
             <input
               type="submit"
               value="Send"

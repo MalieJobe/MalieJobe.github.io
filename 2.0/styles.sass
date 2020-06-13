@@ -5,13 +5,14 @@
     --secondary: #ffffff
     --accent: #5c75ff
 
-@media screen and (min-width: 700px)
+@media (prefers-color-scheme: dark)
     \:root
         --primary: #ffffff
         --secondary: #191919
         --accent: #5c75ff
 
-*
+
+*, *::before, *::after
     box-sizing: border-box
 html
     scroll-behavior: smooth
@@ -21,6 +22,11 @@ body
     color: var(--primary)
     background: var(--secondary)
     font-size: 16px
+
+.container
+    max-width: 940px
+    margin: auto
+
 a
     text-decoration: none
     color: unset
@@ -71,11 +77,15 @@ a
         &caption
             font-size: 1.1em
 
+.main
+    margin-bottom: 4em
+
 .section
     text-align: center
     margin: auto 1em
     padding-top: 3em
     padding-bottom: 3em
+    overflow-x: hidden
     &--stretch
         margin-left: 0
         margin-right: 0
@@ -91,6 +101,7 @@ a
   
 .hero
     text-align: left
+    position: relative
     &__title
         font-weight: 400
         font-size: 1.12em
@@ -102,8 +113,19 @@ a
         font-size: 2em
         em
             font-weight: 600
+        &--accent
+            color: var(--accent)
+    &__scroll
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 40px
+        height: 40px
+        animation: bounce 1s infinite
 
 .cards
+    padding-right: 3px
+    padding-left: 3px
     &--left
         text-align: left
     &__card
@@ -117,9 +139,10 @@ a
             padding-bottom: 4em
             font-size: 1.2em
     &__cardtitle
-        font-weight: 600
+        font-weight: 500
         font-size: 1.3em
         text-transform: uppercase
+        white-space: nowrap
         margin: 0
         padding-left: 10px
         padding-right: 10px
@@ -133,6 +156,7 @@ a
             transform: unset
         &--accent
             color: var(--accent)
+            font-weight: 600
     &__cardimg
         width: 100%
     &__list
@@ -178,10 +202,14 @@ a
             border-radius: 0
             border: 3px solid
             margin-bottom: 1em
-            min-height: 3em
+            padding: 0.6em
+            font-size: 1em
             background: var(--secondary)
             &--large
                 min-height: 8em
+                max-height: 32em
+                resize: vertical
+                font-family: 'Raleway', sans-serif
             &--inverted
                 background: var(--primary)
                 color: var(--secondary)
@@ -191,9 +219,180 @@ a
                 border: none
 
 
-
-details[open] summary ~ * 
+.cards__cardsummary[open] summary ~ * 
     animation: sweep .5s ease-in-out
+.cards__cardsummary[open] .expand-summary
+    display: none
+
+@media (min-width: 678px)
+    .section
+        &__title
+            font-size: 9em
+            margin-bottom: 20px
+    
+    .hero
+        &__subtitle
+            font-size: 3.5em
+
+    .skills
+        .cards
+            display: flex
+            justify-content: flex-start
+            &__card
+                flex-basis: 33%
+                align-self: flex-start
+                &:nth-child(1)
+                    order: 2
+                    margin-left: 1em
+                    margin-right: 1em
+                &:nth-child(2)
+                    order: 1
+                &:nth-child(3)
+                    order: 3  
+            &__list
+                columns: unset
+                text-align: center
+
+    .projects
+        .cards
+            display: grid
+            grid-template-columns: 1fr 1fr
+            column-gap: 1em
+
+    .about
+        &__portrait
+            width: 50%
+            margin-left: 40%
+            margin-top: -2em
+        .cards
+            &__card
+                &--offcenter
+                    width: 70%
+
+    .contact
+        &__pair
+            &--stretch
+                grid-column-start: 2
+                grid-row-start: 1
+                grid-row-end: 3
+        &__form
+            display: grid
+            grid-template-columns: 1fr 1fr
+            column-gap: 1em
+            grid-template-rows: 2fr 1fr
+            input
+                max-height: 2.8em
+                align-self: end
+                cursor: pointer
+
+@media (min-width: 960px)
+    body
+        font-size: 18px
+
+    .section
+        &__title
+            font-size: 12em
+
+    .hero
+        &__subtitle
+            font-size: 3.4em
+            font-weight: 500
+
+    .header
+        margin: auto 1em 6em
+        &__logo
+            padding-top: 1rem
+        &__menu
+            position: relative
+            box-shadow: none
+            align-self: flex-end
+            &item a
+                padding-top: 2rem
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    margin: auto
+                    height: 3px
+                    width: 0px
+                    background: transparent
+                    transition: width .5s ease, background-color .5s ease
+                    position: absolute
+                    top: 0
+                    left: -0.25em
+                &:hover::before
+                    width: 100%
+                    background: var(--accent)
+                    
+            &list
+                display: block
+                text-align: right
+        &__icon
+            display: none
+            &caption
+                font-size: 1.2em
+                font-weight: 500
+    .skills
+        .cards
+            &__cardtitle
+                font-size: 1.6em
+
+    .projects
+        .cards
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr
+            column-gap: 1em
+            grid-row-gap: 1em
+            grid-template-areas: "one two three" "one four four" "five five six"
+            &__card
+                margin-bottom: 10px
+                &:nth-of-type(1)
+                    grid-area: one
+                &:nth-of-type(2)
+                    grid-area: two
+                &:nth-of-type(3)
+                    grid-area: three
+                &:nth-of-type(4)
+                    grid-area: four
+                &:nth-of-type(5)
+                    grid-area: five
+                &:nth-of-type(6)
+                    grid-area: six
+
+                &:nth-of-type(2), &:nth-of-type(3)
+                    .cards__cardimg
+                        display: block
+                    .cards__carddesc
+                        display: none
+                    &:hover > .cards__cardimg
+                        display: none
+                    &:hover > .cards__carddesc
+                        display: block
+                        
+
+            &__cardtitle
+                font-size: 1.1em
+
+    .about
+        &__portrait
+            width: 40%
+            margin-left: 55%
+            margin-top: -10em
+        .cards
+            &__card
+                &--offcenter
+                    width: 60%
+        
+
+@keyframes bounce
+    0%
+        bottom: 0
+    50%
+        bottom: 10px
+    100%
+        bottom: 0
+
+
 @keyframes sweep
     0%
         opacity: 0
@@ -201,6 +400,3 @@ details[open] summary ~ *
     100%
         opacity: 1
         margin-left: 0px
-details[open] .expand-summary
-    display: none
-
