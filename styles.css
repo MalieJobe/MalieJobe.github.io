@@ -566,13 +566,13 @@ a {
     -ms-grid-column: 3;
     grid-area: six;
   }
-  .projects .cards__card:nth-of-type(2) .cards__cardimg, .projects .cards__card:nth-of-type(3) .cards__cardimg {
+  .projects .cards__card:nth-of-type(2) picture, .projects .cards__card:nth-of-type(3) picture {
     display: block;
   }
   .projects .cards__card:nth-of-type(2) .cards__carddesc, .projects .cards__card:nth-of-type(3) .cards__carddesc {
     display: none;
   }
-  .projects .cards__card:nth-of-type(2):hover > .cards__cardimg, .projects .cards__card:nth-of-type(3):hover > .cards__cardimg {
+  .projects .cards__card:nth-of-type(2):hover > picture, .projects .cards__card:nth-of-type(3):hover > picture {
     display: none;
   }
   .projects .cards__card:nth-of-type(2):hover > .cards__carddesc, .projects .cards__card:nth-of-type(3):hover > .cards__carddesc {
