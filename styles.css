@@ -206,6 +206,7 @@ a {
   position: relative;
   padding: 1em;
   margin-bottom: 3em;
+  max-width: 100%;
 }
 
 .cards__card--inverted {
@@ -213,6 +214,10 @@ a {
   margin: auto 1em;
   padding-bottom: 4em;
   font-size: 1.2em;
+}
+
+.cards__card--accent {
+  outline-color: var(--accent);
 }
 
 .cards__cardtitle {
@@ -276,7 +281,6 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: auto;
 }
 
 .cards__cardsummary {
@@ -379,16 +383,16 @@ a {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-right: 1em;
-  -webkit-animation: carousel 40s infinite;
-          animation: carousel 40s infinite;
+  -webkit-animation: carousel 44s infinite;
+          animation: carousel 44s infinite;
 }
 
 .reviews__review-timer {
   width: 0%;
   height: 1px;
   background: #8400ff;
-  -webkit-animation: timer 10s infinite;
-          animation: timer 10s infinite;
+  -webkit-animation: timer 11s infinite linear;
+          animation: timer 11s infinite linear;
 }
 
 .reviews__author {
@@ -471,6 +475,9 @@ a {
     -webkit-columns: unset;
             columns: unset;
     text-align: center;
+  }
+  .skills .cards__listitem--rainbow {
+    margin: auto;
   }
   .projects .cards {
     display: -ms-grid;
@@ -608,13 +615,13 @@ a {
     -ms-grid-column-span: 2;
     grid-area: four;
   }
-  .projects .cards__card:nth-of-type(5) {
+  .projects .cards__card:nth-of-type(6) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: five;
   }
-  .projects .cards__card:nth-of-type(6) {
+  .projects .cards__card:nth-of-type(5) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     grid-area: six;
