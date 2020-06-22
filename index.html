@@ -19,6 +19,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
   </head>
   <body>
+    <div class="construction">
+      <p>
+        My Portfolio is under construction. You may find some "Lorem Ipsum"
+        fields which I will populate within the next few days.
+      </p>
+      <button id="closeme">Continue to website 👉</button>
+    </div>
     <header class="header">
       <span class="header__logo">Portfolio</span>
       <nav class="header__menu">
@@ -654,6 +661,9 @@
     <script src="aos/aos.js"></script>
     <script>
       AOS.init();
+      var construction = document.querySelector('.construction');
+      var closeBtn = document.getElementById('closeme');
+      closeBtn.addEventListener('click', function(){construction.parentElement.removeChild(construction);});
     </script>
   </body>
 </html>

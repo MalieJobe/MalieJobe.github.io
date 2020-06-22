@@ -812,4 +812,26 @@ a[target="_blank"]::after {
     width: 100%;
   }
 }
+
+.construction {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  height: 80vh;
+  width: 80vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 5vh;
+  z-index: 200;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.construction button {
+  background: var(--accent);
+  border: 2px #ffffff solid;
+  padding: 5px 10px;
+  font-size: 14px;
+}
 /*# sourceMappingURL=styles.css.map */
