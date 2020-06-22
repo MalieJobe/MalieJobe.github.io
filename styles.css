@@ -1,14 +1,14 @@
 :root {
   --primary: #191919;
   --secondary: #ffffff;
-  --accent: #5c75ff;
+  --accent: #0078ce;
+  --link: #0078ce;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #ffffff;
     --secondary: #191919;
-    --accent: #5c75ff;
   }
 }
 
@@ -37,6 +37,20 @@ body {
 a {
   text-decoration: none;
   color: unset;
+}
+
+a[target="_blank"]::after {
+  position: absolute;
+  margin-left: 5px;
+  padding: 8px;
+  content: ' ';
+  height: 12px;
+  width: 12px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjciIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyNyAyNyI+DQogIDxkZWZzPg0KICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1uZXctdGFiIj4NCiAgICAgIDxyZWN0IHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyIvPg0KICAgIDwvY2xpcFBhdGg+DQogIDwvZGVmcz4NCiAgPGcgaWQ9Im5ldy10YWIiIGNsaXAtcGF0aD0idXJsKCNjbGlwLW5ldy10YWIpIj4NCiAgICA8cmVjdCB3aWR0aD0iMjciIGhlaWdodD0iMjciIGZpbGw9IiNmZmYiLz4NCiAgICA8cGF0aCBpZD0iSWNvbl9tYXRlcmlhbC1vcGVuLWluLW5ldyIgZGF0YS1uYW1lPSJJY29uIG1hdGVyaWFsLW9wZW4taW4tbmV3IiBkPSJNMjguNSwyOC41SDcuNVY3LjVIMTh2LTNINy41YTMsMywwLDAsMC0zLDN2MjFhMywzLDAsMCwwLDMsM2gyMWEzLjAwOSwzLjAwOSwwLDAsMCwzLTNWMThoLTNaTTIxLDQuNXYzaDUuMzg1TDExLjY0LDIyLjI0NWwyLjExNSwyLjExNUwyOC41LDkuNjE1VjE1aDNWNC41WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuNSAtNC41KSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
 }
 
 .header {
@@ -312,7 +326,7 @@ a {
   font-size: 0.7em;
   display: block;
   line-height: 2;
-  color: #008eff;
+  color: var(--link);
 }
 
 .contact__form {
@@ -414,9 +428,12 @@ a {
   font-size: 1.2em;
 }
 
-.reviews__author-position {
+.reviews__author-link {
   margin: 0;
-  font-size: 1em;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--link);
+  text-decoration: none;
 }
 
 .reviews__author-img {
@@ -490,7 +507,7 @@ a {
   }
   .projects .cards__card--accent {
     /* review slider overflow fix */
-    max-width: 50vw;
+    max-width: 46vw;
   }
   .about__portrait {
     width: 50%;
