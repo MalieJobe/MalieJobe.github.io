@@ -135,7 +135,6 @@ a
         width: 40px
         height: 40px
         animation: bounce 1s infinite
-        g
         path
             stroke: var(--primary)
 
@@ -264,9 +263,12 @@ a
     overflow: hidden
     &__review
         flex-shrink: 0
+        flex-grow: 0
         flex-basis: 100%
         margin-right: 1em
         animation: carousel 44s infinite
+        &-text
+            overflow-x: hidden
         &-timer
             width: 0%
             height: 1px
@@ -334,7 +336,7 @@ a
             grid-template-columns: 1fr 1fr
             column-gap: 1em
             &__card--accent
-                max-width: 46vw
+                // max-width: 46vw
 
     .about
         &__portrait
