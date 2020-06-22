@@ -169,7 +169,7 @@ a[target="_blank"]::after {
 }
 
 .hero__title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.12em;
   line-height: 1.1;
 }
@@ -506,7 +506,6 @@ a[target="_blank"]::after {
             column-gap: 1em;
   }
   .projects .cards__card--accent {
-    /* review slider overflow fix */
     max-width: 46vw;
   }
   .about__portrait {
@@ -661,7 +660,6 @@ a[target="_blank"]::after {
     display: block;
   }
   .projects .cards__card--accent {
-    /* review slider overflow fix */
     max-width: 100%;
   }
   .projects .cards__cardtitle {
