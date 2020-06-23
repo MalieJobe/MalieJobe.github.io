@@ -191,18 +191,7 @@ a[target="_blank"]::after {
   color: var(--accent);
 }
 
-.hero__scroll {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
-}
-
-.hero__scroll path {
+.hero__subtitle path {
   stroke: var(--primary);
 }
 
