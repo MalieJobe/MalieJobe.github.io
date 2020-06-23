@@ -297,6 +297,42 @@ a[target="_blank"]::after {
   width: max-content;
 }
 
+.cards__tooltip-list li {
+  position: relative;
+}
+
+.cards__tooltip-list li:before, .cards__tooltip-list li:after {
+  position: absolute;
+  background: var(--primary);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.cards__tooltip-list li:before {
+  content: attr(data-tooltip);
+  bottom: 30px;
+  padding: 8px;
+  max-width: 350px;
+  color: var(--secondary);
+}
+
+.cards__tooltip-list li:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 24%;
+  top: -20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cards__tooltip-list li:hover:before, .cards__tooltip-list li:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
 .cards__cardsummary {
   text-align: left;
 }
@@ -509,7 +545,7 @@ a[target="_blank"]::after {
             column-gap: 1em;
   }
   .about__portrait {
-    width: 50%;
+    width: 40%;
     margin-left: 40%;
     margin-top: -2em;
   }

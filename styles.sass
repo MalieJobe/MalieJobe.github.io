@@ -196,6 +196,31 @@ a
             -webkit-background-clip: text
             background-clip: text
             width: max-content
+    &__tooltip-list
+        li
+            position: relative
+        li:before, li:after
+            position: absolute
+            background: var(--primary)
+            visibility: hidden
+            opacity: 0
+            transition: all 200ms ease
+        li:before
+            content: attr(data-tooltip)
+            bottom: 30px
+            padding: 8px
+            max-width: 350px
+            color: var(--secondary)
+        li:after
+            content: ""
+            width: 15px
+            height: 15px
+            left: 24%
+            top: -20px
+            transform: rotate(45deg)
+        li:hover:before, li:hover:after
+            visibility: visible
+            opacity: 1
     &__cardsummary
         text-align: left
         summary
@@ -336,7 +361,7 @@ a
 
     .about
         &__portrait
-            width: 50%
+            width: 40%
             margin-left: 40%
             margin-top: -2em
         .cards
