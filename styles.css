@@ -405,10 +405,6 @@ a[target="_blank"]::after {
           animation: carousel 44s infinite;
 }
 
-.reviews__review-text {
-  overflow-x: hidden;
-}
-
 .reviews__review-timer {
   width: 0%;
   height: 1px;
@@ -507,8 +503,8 @@ a[target="_blank"]::after {
   .projects .cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: calc(50% - 0.5em) calc(50% - 0.5em);
+        grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em);
     -webkit-column-gap: 1em;
             column-gap: 1em;
   }
@@ -606,8 +602,8 @@ a[target="_blank"]::after {
     font-size: 1.6em;
   }
   .projects .cards {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: calc(33% - 0.3em) 1fr 1fr;
+        grid-template-columns: calc(33% - 0.3em) 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     -webkit-column-gap: 1em;
@@ -662,9 +658,6 @@ a[target="_blank"]::after {
   }
   .projects .cards__card:nth-of-type(2):hover > .cards__carddesc, .projects .cards__card:nth-of-type(3):hover > .cards__carddesc {
     display: block;
-  }
-  .projects .cards__card--accent {
-    max-width: 100%;
   }
   .projects .cards__cardtitle {
     font-size: 1.1em;
@@ -816,16 +809,16 @@ a[target="_blank"]::after {
 .construction {
   position: fixed;
   background: rgba(0, 0, 0, 0.9);
-  height: 80vh;
-  width: 80vw;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: 5vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100vw;
+  left: 0;
+  top: 0;
   z-index: 200;
   color: white;
-  padding: 1em;
-  font-size: 1.5em;
+  padding: 10px;
+  font-size: 14px;
 }
 
 .construction button {

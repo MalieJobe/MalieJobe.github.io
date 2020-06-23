@@ -661,9 +661,11 @@
     <script src="aos/aos.js"></script>
     <script>
       AOS.init();
-      var construction = document.querySelector('.construction');
-      var closeBtn = document.getElementById('closeme');
-      closeBtn.addEventListener('click', function(){construction.parentElement.removeChild(construction);});
+      var construction = document.querySelector(".construction");
+      var closeBtn = document.getElementById("closeme");
+      closeBtn.addEventListener("click", function () {
+        construction.parentElement.removeChild(construction);
+      });
     </script>
   </body>
 </html>

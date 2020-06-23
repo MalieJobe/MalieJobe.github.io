@@ -267,8 +267,6 @@ a
         flex-basis: 100%
         margin-right: 1em
         animation: carousel 44s infinite
-        &-text
-            overflow-x: hidden
         &-timer
             width: 0%
             height: 1px
@@ -333,10 +331,8 @@ a
     .projects
         .cards
             display: grid
-            grid-template-columns: 1fr 1fr
+            grid-template-columns: calc(50% - 0.5em) calc(50% - 0.5em)
             column-gap: 1em
-            &__card--accent
-                // max-width: 46vw
 
     .about
         &__portrait
@@ -418,7 +414,7 @@ a
 
     .projects
         .cards
-            grid-template-columns: 1fr 1fr 1fr
+            grid-template-columns: calc(33% - 0.3em) 1fr 1fr
             grid-template-rows: 1fr 1fr 1fr
             column-gap: 1em
             grid-row-gap: 1em
@@ -447,9 +443,6 @@ a
                         display: none
                     &:hover > .cards__carddesc
                         display: block
-
-                &--accent
-                    max-width: 100%
                         
             &__cardtitle
                 font-size: 1.1em
@@ -511,15 +504,14 @@ a
 .construction
     position: fixed
     background: rgba(0, 0, 0, 0.9)
-    height: 80vh
-    width: 80vw
-    left: 50%
-    transform: translateX(-50%)
-    margin-top: 5vh
+    height: max-content
+    width: 100vw
+    left: 0
+    top: 0
     z-index: 200
     color: white
-    padding: 1em
-    font-size: 1.5em
+    padding: 10px
+    font-size: 14px
     button
         background: var(--accent)
         border: 2px #ffffff solid
