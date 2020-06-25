@@ -14,9 +14,16 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="aos/aos.css" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+
+    <script type="text/javascript">
+      var link = document.createElement( "link" );
+      link.rel = "stylesheet";
+      link.href = "aos/aos.css";
+      
+      document.getElementsByTagName( "head" )[0].appendChild( link );
+    </script>
   </head>
   <body>
     <div class="construction">
