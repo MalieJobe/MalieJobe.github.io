@@ -260,6 +260,8 @@ a[target="_blank"]::after {
   background: var(--accent);
   color: var(--secondary);
   padding: 4px 8px;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .cards__list {
