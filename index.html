@@ -17,12 +17,12 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
 
+    <!-- Only load AOS.css if JS is enabled -->
     <script type="text/javascript">
-      var link = document.createElement( "link" );
+      var link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = "aos/aos.css";
-      
-      document.getElementsByTagName( "head" )[0].appendChild( link );
+      document.getElementsByTagName("head")[0].appendChild(link);
     </script>
   </head>
   <body>
@@ -722,6 +722,7 @@
       </section>
     </main>
     <footer></footer>
+    <!-- Load and execute AOS.js -->
     <script src="aos/aos.js"></script>
     <script>
       AOS.init();
