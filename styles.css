@@ -682,16 +682,16 @@ a[target="_blank"]::after {
     -ms-grid-column: 3;
     grid-area: six;
   }
-  .projects .cards__card:nth-of-type(2), .projects .cards__card:nth-of-type(3) {
+  .projects .cards__card:nth-of-type(2), .projects .cards__card:nth-of-type(3), .projects .cards__card:nth-of-type(5) {
     display: block;
   }
-  .projects .cards__card:nth-of-type(2) .cards__carddesc, .projects .cards__card:nth-of-type(3) .cards__carddesc {
+  .projects .cards__card:nth-of-type(2) .cards__carddesc, .projects .cards__card:nth-of-type(3) .cards__carddesc, .projects .cards__card:nth-of-type(5) .cards__carddesc {
     display: none;
   }
-  .projects .cards__card:nth-of-type(2):hover > picture, .projects .cards__card:nth-of-type(3):hover > picture {
+  .projects .cards__card:nth-of-type(2):hover > picture, .projects .cards__card:nth-of-type(3):hover > picture, .projects .cards__card:nth-of-type(5):hover > picture {
     display: none;
   }
-  .projects .cards__card:nth-of-type(2):hover > .cards__carddesc, .projects .cards__card:nth-of-type(3):hover > .cards__carddesc {
+  .projects .cards__card:nth-of-type(2):hover > .cards__carddesc, .projects .cards__card:nth-of-type(3):hover > .cards__carddesc, .projects .cards__card:nth-of-type(5):hover > .cards__carddesc {
     display: block;
   }
   .projects .cards__cardtitle {
