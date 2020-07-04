@@ -534,20 +534,15 @@ a
     100%
         width: 100%
 
+.anim
+    opacity: 0
+.no-js .anim
+    opacity: 1
 
-.construction
-    position: fixed
-    background: rgba(0, 0, 0, 0.9)
-    height: max-content
-    width: 100vw
-    left: 0
-    top: 0
-    z-index: 200
-    color: white
-    padding: 10px
-    font-size: 14px
-    button
-        background: var(--accent)
-        border: 2px #ffffff solid
-        padding: 5px 10px
-        font-size: 14px
+@keyframes animateIn
+    0%
+        opacity: 0
+        transform: translateY(50px)
+    100%
+        opacity: 1
+        transform: translateY(0)

@@ -850,25 +850,37 @@ a.invert[target="_blank"]::after {
   }
 }
 
-.construction {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.9);
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 100vw;
-  left: 0;
-  top: 0;
-  z-index: 200;
-  color: white;
-  padding: 10px;
-  font-size: 14px;
+.anim {
+  opacity: 0;
 }
 
-.construction button {
-  background: var(--accent);
-  border: 2px #ffffff solid;
-  padding: 5px 10px;
-  font-size: 14px;
+.no-js .anim {
+  opacity: 1;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -16,23 +16,8 @@
     <link rel="stylesheet" href="fonts.css" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-
-    <!-- Only load AOS.css if JS is enabled -->
-    <script type="text/javascript">
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "aos/aos.css";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
   </head>
-  <body>
-    <div class="construction">
-      <p>
-        My Portfolio is under construction. You may find some "Lorem Ipsum"
-        fields which I will populate within the next few days.
-      </p>
-      <button id="closeme">Continue to website 👉</button>
-    </div>
+  <body class="no-js">
     <header class="header">
       <span class="header__logo">Portfolio</span>
       <nav class="header__menu">
@@ -171,7 +156,7 @@
               >Programmer & Sound Engineer</span
             >
           </h1>
-          <h2 class="hero__subtitle">
+          <h2 class="hero__subtitle anim" data-delay="0s">
             I am a highly motivated software engineer creating
             <em
               >unique web experiences<span class="hero__subtitle--accent"
@@ -185,16 +170,7 @@
         <h3 class="section__title">My Skills</h3>
         <div class="container">
           <div class="cards">
-            <div
-              class="cards__card"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="0"
-              data-aos-duration="750"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card anim" data-delay="200ms">
               <h4 class="cards__cardtitle cards__cardtitle--accent">Dev</h4>
               <ul class="cards__list">
                 <li class="cards__listitem">Javascript / ES6</li>
@@ -216,16 +192,7 @@
                 <li class="cards__listitem">Emmet</li>
               </ul>
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-delay="200"
-              data-aos-duration="750"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card anim" data-delay="500ms">
               <h4 class="cards__cardtitle">Design</h4>
               <ul class="cards__list">
                 <li class="cards__listitem">UI/UX Design</li>
@@ -242,16 +209,7 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-left"
-              data-aos-offset="200"
-              data-aos-delay="40"
-              data-aos-duration="750"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card anim" data-delay="900ms">
               <h4 class="cards__cardtitle">Audio</h4>
               <ul class="cards__list">
                 <li class="cards__listitem">Recording</li>
@@ -274,14 +232,7 @@
         <h3 class="section__title">Projects</h3>
         <div class="container">
           <div class="cards cards--left">
-            <div
-              class="cards__card"
-              data-aos="fade-right"
-              data-aos-delay="50"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card">
               <picture>
                 <source
                   srcset="assets/rsz_shopify-theme.webp"
@@ -309,14 +260,7 @@
                 >View Live</a
               >
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-down"
-              data-aos-delay="200"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card">
               <picture>
                 <source
                   srcset="assets/rsz_delivery-map.webp"
@@ -347,14 +291,7 @@
                 >View Live</a
               >
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-left"
-              data-aos-delay="400"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card">
               <picture>
                 <source
                   srcset="assets/rsz_snippet-optimizer.webp"
@@ -384,14 +321,7 @@
                 >View Live</a
               >
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-left"
-              data-aos-delay="50"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card">
               <h4 class="cards__cardtitle cards__cardtitle--left">
                 20+ CMS Sites
               </h4>
@@ -454,14 +384,7 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="cards__card"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card">
               <h4 class="cards__cardtitle cards__cardtitle--left">
                 Wireframes
               </h4>
@@ -487,14 +410,7 @@
                 >View Live</a
               >
             </div>
-            <div
-              class="cards__card cards__card--accent"
-              data-aos="fade-right"
-              data-aos-delay="200"
-              data-aos-duration="750"
-              data-aos-mirror="false"
-              data-aos-once="false"
-            >
+            <div class="cards__card cards__card--accent">
               <h4
                 class="cards__cardtitle cards__cardtitle--left cards__cardtitle--accent"
               >
@@ -508,7 +424,7 @@
                       alt=""
                       class="reviews__author-img"
                     />
-                    <div class="reviews__author-info">
+                    <div class="reviews__author-info anim">
                       <h5 class="reviews__author-name">Felix v. R.</h5>
                       <h6 class="reviews__author-link">
                         <a
@@ -629,14 +545,7 @@
       <section class="section section--stretch about" id="about">
         <h3 class="section__title section__title--inverted">About Me</h3>
         <div class="container">
-          <div
-            class="cards__card cards__card--inverted cards__card--offcenter"
-            data-aos="fade-right"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-            data-aos-mirror="false"
-            data-aos-once="false"
-          >
+          <div class="cards__card cards__card--inverted cards__card--offcenter">
             <details class="cards__cardsummary">
               <summary>
                 <p>
@@ -722,14 +631,29 @@
       </section>
     </main>
     <footer></footer>
-    <!-- Load and execute AOS.js -->
-    <script src="aos/aos.js"></script>
     <script>
-      AOS.init();
-      var construction = document.querySelector(".construction");
-      var closeBtn = document.getElementById("closeme");
-      closeBtn.addEventListener("click", function () {
-        construction.parentElement.removeChild(construction);
+      document.getElementsByTagName('body')[0].classList.remove('no-js');
+
+      const anim_el = document.querySelectorAll('.anim');
+      const options = {
+        root: null,
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          console.log(entry);
+          if(entry.isIntersecting === true) {
+            entry.target.style.animation = `animateIn 1s ease forwards ${(entry.target.dataset.delay) || "400ms"}`;
+          } else {
+            entry.target.style.animation = "";
+          }
+          
+        })
+      }, options);
+
+      anim_el.forEach(element => {
+        observer.observe(element);
       });
     </script>
   </body>
