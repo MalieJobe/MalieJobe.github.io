@@ -7,8 +7,15 @@ $accent: #7b6cbd
 $header-gradient: linear-gradient(93.32deg, #18ECBC 0%, #8281F5 100%)
 $root-size: 16px
 $text-size-label: 1.5rem
-$text-size-header: 4rem
+$text-size-header: 3rem
 $text-size-subheader: 3rem
+
+@mixin gradient-header
+    background: $header-gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: $text-size-header
+    font-weight: 700
 
 @font-face
     font-family: "DM Sans"
@@ -19,3 +26,156 @@ body
     font-size: $root-size
     color: $text
     background: $background
+
+.landing
+    height: 100vh
+    width: 100vw
+    position: relative
+
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    &__visual
+        position: relative
+        padding-top: 0.75rem
+        padding-bottom: 2rem
+        background: linear-gradient(180deg, rgba(0,0,0,0.7), transparent)
+
+    &__content
+        position: relative
+
+    &__heroimg
+        position: absolute
+        height: 100vh
+        width: 100vw
+        object-fit: cover
+
+    &__menu
+        display: none
+
+    &__intro
+        position: relative
+        padding-top: 2rem
+        padding-bottom: 0.75rem
+        background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.5) 90%, transparent)
+    &__headline
+        @include gradient-header
+        max-width: 36rem
+    &__title
+        margin-bottom: 2.5rem
+        line-height: 1.2
+    &__readmore
+        position: absolute
+        bottom: 8px
+        right: 8px
+        height: 2.5rem
+        transform: rotate(9deg)
+
+    &__guide
+        max-width: 36rem
+        &--collapsed
+            line-clamp: 1
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+        &--expanded
+            line-clamp: none
+            overflow: visible
+            -webkit-line-clamp: none
+
+        &__arrow
+            width: 14px
+            transform: rotate(0deg)
+            transition: transform 0.3s
+            &--expanded
+                transform: rotate(90deg)
+
+    &__mic
+        height: 37px
+        width: 27px
+
+.edge-space
+    padding-right: 0.75rem
+    padding-left: 0.75rem
+
+.desktop
+    display: none
+
+.hidden
+    visibility: hidden
+
+.opacity-60
+    opacity: 0.6
+.opacity-80
+    opacity: 0.8
+
+.mt-1
+    margin-top: 1rem
+.mt-2
+    margin-top: 2rem
+
+.flex-col
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: nowrap
+    gap: 0.5rem
+    align-items: center
+
+@media screen and (min-width: 768px)
+    .mobile
+        display: none
+    .desktop
+        display: inherit
+    .edge-space
+        padding-right: 2rem
+        padding-left: 2rem
+    .landing
+        display: block
+        &__heroimg
+            width: 50vw
+            right: 0
+        &__visual
+            width: calc(50vw - 4rem)
+            position: absolute
+            right: 0
+            padding-top: 2rem
+            height: calc(100vh - 4rem)
+            align-items: flex-start
+            background: linear-gradient(180deg, rgba(0,0,0,0.7), transparent 20%)
+        &__content
+            width: 50vw
+            left: 0
+            height: 100vh
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__menu
+            display: flex
+            gap: 2.5rem
+            &__item
+                font-size: 1.5rem
+                color: $text
+                text-decoration: none
+                border: 1px solid $text
+                padding: 0.25rem 1rem
+        &__intro
+            background: none
+            padding-bottom: 2rem
+        &__soundwave
+            position: absolute
+            bottom: 3rem
+            width: calc(100% - 4rem)
+            img
+                width: 100%
+                height: 12rem
+        &__guide
+
+        &__readmore
+            transform: rotate(0deg)
+            height: 4rem
+            right: 1rem
+            bottom: 1rem

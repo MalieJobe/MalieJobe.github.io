@@ -19,5 +19,58 @@
       )
         document.location.replace("/archive/v2");
     </script>
+
+    <section class="landing">
+      <img
+        src="tropical_garden_with_light_ring.webp"
+        class="landing__heroimg"
+        alt="°"
+      />
+      <div class="landing__visual edge-space">
+        <nav class="flex-col">
+          <img src="microphone.svg" alt="°" class="landing__mic" />
+          <ul class="landing__menu" role="navigation">
+            <li><a href="#" class="landing__menu__item">Home</a></li>
+            <li><a href="#" class="landing__menu__item">Skills</a></li>
+            <li><a href="#" class="landing__menu__item">Experience</a></li>
+            <li><a href="#" class="landing__menu__item">Me</a></li>
+          </ul>
+          <div class="landing__soundwave">
+            <canvas id="waveformCanvas"></canvas>
+          </div>
+        </nav>
+        <div class="mobile flex-col mt-1 opacity-80">
+          <img
+            src="arrow_straight.svg"
+            alt="=>"
+            class="landing__guide__arrow"
+          />
+          <p class="landing__guide landing__guide--collapsed">
+            On the top you can see all audio effects (like button taps) being
+            visualized in real-time. If you give access to your microphone it
+            will even visualize those recordings! Don&apos;t worry, it&apos;s
+            all happening locally on your device.
+          </p>
+        </div>
+      </div>
+      <div class="landing__content">
+        <p class="landing__guide desktop edge-space mt-2">
+          On the right you can see all audio effects (like button clicks) being
+          visualized in real-time. If you give access to your microphone it will
+          even visualize those recordings! Don&apos;t worry, it&apos;s all
+          happening locally on your device.
+        </p>
+        <div class="landing__intro edge-space">
+          <h1 class="landing__title">
+            Malie Bertram<span class="hidden"> - </span><br />
+            <span class="opacity-60">Software & Sound Engineer</span>
+          </h1>
+          <h2 class="landing__headline">
+            Clean Code, DRY Code, I Code&hellip;
+          </h2>
+          <img src="arrow_curled.svg" alt="" class="landing__readmore" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
